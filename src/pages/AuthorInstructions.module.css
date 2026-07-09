@@ -1,0 +1,83 @@
+.pageBg {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f5f5ff 0%, #eef4ff 100%);
+  padding: 32px 20px 48px;
+  color: #111827;
+}
+
+.bodyLayout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 28px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 32px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #7c3aed;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  font-size: 0.78rem;
+}
+
+.pageHeading {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 3vw, 2.4rem);
+}
+
+.intro {
+  margin: 0;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.sectionCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px 28px;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+}
+
+.sectionTitle {
+  margin: 0 0 0.8rem;
+  font-size: 1.08rem;
+  color: #111827;
+}
+
+.bulletList {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.bulletList li {
+  line-height: 1.75;
+  color: #475569;
+}
+
+.sectionCard p {
+  margin: 0 0 1rem;
+  color: #475569;
+  line-height: 1.78;
+}
+
+@media (max-width: 960px) {
+  .bodyLayout { grid-template-columns: 1fr; }
+}

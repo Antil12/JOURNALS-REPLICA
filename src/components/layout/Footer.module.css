@@ -1,0 +1,159 @@
+.footer {
+  width: 100%;
+  background: #a5a2a2;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+
+.footerCurve {
+  width: 100%;
+  background: #ffffff;
+}
+
+.dividerImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 22px 24px 0;
+}
+
+.licenseSection {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.licenseImg {
+  border: none;
+  width: 88px;
+}
+
+.openAccessLink {
+  margin-left: 10px;
+}
+
+.openAccessImg {
+  width: 105px;
+}
+
+.copy {
+  text-align: center;
+  padding: 0.5em 0em 0;
+  margin-top: 0em;
+  float: left;
+  width: 100%;
+}
+
+.links {
+  float: left;
+  margin-top: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+}
+
+.links li {
+  list-style: none;
+  padding-right: 28px;
+  float: left;
+}
+
+.links a {
+  color: #000000;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social li {
+  display: inline-block;
+}
+
+.socialIcon {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.socialIcon:hover {
+  color: #ffffff;
+}
+
+.socialIcon.facebook:hover {
+  background: #3b5998;
+  border-color: #3b5998;
+}
+
+.socialIcon.twitter:hover {
+  background: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.socialIcon.linkedin:hover {
+  background: #ea4c89;
+  border-color: #ea4c89;
+}
+
+.scrollTop {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 999;
+  color: #803082;
+  width: 50px;
+  line-height: 50px;
+  right: 30px;
+  bottom: 30px;
+  padding-top: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.scrollTop.show {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+.scrollTopInner i {
+  line-height: inherit;
+  font-size: 5rem;
+}
+
+.copyText {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  float: right;
+  font-weight: 500;
+  margin-top: 8px;
+  margin: 0;
+}
