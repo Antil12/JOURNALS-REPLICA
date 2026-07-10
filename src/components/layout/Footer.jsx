@@ -3,6 +3,7 @@ import dividerImg from '../../assets/footer-bg.png'
 import facebookIcon from '../../assets/facebook.svg'
 import twitterIcon from '../../assets/x-twitter.svg'
 import linkedinIcon from '../../assets/linkedin.svg'
+import siteConfig from '../../config/siteConfig'
 
 export default function Footer() {
   return (
@@ -31,24 +32,24 @@ export default function Footer() {
           </ul>
           <ul className={styles.agileitsSocialList}>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/jaypeemedicalpublishers1" className={styles.w3AgileFacebook}>
+              <a target="_blank" rel="noopener noreferrer" href={siteConfig.socialLinks.facebook} className={styles.w3AgileFacebook}>
                 <img src={facebookIcon} fill="white" height="12.08px" width="13px" aria-hidden="true" style={{ marginTop: '7px' }} />
               </a>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/jaypeejournals" className={styles.agileTwitter}>
+              <a target="_blank" rel="noopener noreferrer" href={siteConfig.socialLinks.twitter} className={styles.agileTwitter}>
                 <img src={twitterIcon} fill="white" height="12.08px" width="13px" aria-hidden="true" style={{ marginTop: '7px' }} />
               </a>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://in.linkedin.com/company/jaypeejournals" className={styles.w3AgileDribble}>
+              <a target="_blank" rel="noopener noreferrer" href={siteConfig.socialLinks.linkedin} className={styles.w3AgileDribble}>
                 <img src={linkedinIcon} fill="white" height="12.08px" width="13px" aria-hidden="true" style={{ marginTop: '7px' }} />
               </a>
             </li>
           </ul>
           <p>
             <div className={styles.col12}>
-              <p className={styles.copywriteTxt}>© 2026. Jaypee Brothers Medical Publishers (P) Ltd.&nbsp;|&nbsp;All Rights Reserved.</p>
+              <p className={styles.copywriteTxt}>{siteConfig.copyright}</p>
             </div>
           </p>
         </div>

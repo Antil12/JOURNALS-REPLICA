@@ -1,0 +1,28 @@
+export default {
+  siteName: 'Site B Journal',
+  shortName: 'SBJ',
+  siteCode: 'SBJ',
+  journalCode: 'SBJ',
+  logo: './assets/site-logo.svg',
+  favicon: './assets/site-favicon.svg',
+  coverImage: './assets/site-cover.svg',
+  heroImage: './assets/site-cover.svg',
+  email: 'editor@siteb.example',
+  phone: '+1-555-0100',
+  address: '100 Example Street, Suite 200, Example City, EX 00000.',
+  socialLinks: {
+    facebook: 'https://www.facebook.com/example',
+    twitter: 'https://www.twitter.com/example',
+    linkedin: 'https://www.linkedin.com/example',
+  },
+  copyright: '© 2026. Example Publishing Group. All Rights Reserved.',
+  metadata: {
+    title: 'Site B Journal',
+    description: 'Site B journal portal content.',
+  },
+  submitManuscriptUrl: 'https://example.com/submit',
+  registerUrl: 'https://example.com/register',
+  loginUrl: 'https://example.com/login',
+  publisherName: 'Example Publishing Group',
+  logoImages: ['./assets/site-logo.svg', './assets/site-logo.svg', './assets/site-logo.svg'],
+}
