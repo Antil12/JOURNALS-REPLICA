@@ -119,72 +119,240 @@ export default {
       ],
     },
   },
-  editorialBoard: {
-    eyebrow: 'About Journal',
-    heading: 'Editorial Board',
-    sections: [
-      {
-        title: 'Editor-in-Chief',
-        members: [
-          {
-            name: 'Dr Nidhi Puri',
-            qualification: 'MBBS, MS Anatomy',
-            designation: 'Professor & Head',
-            institution: 'All India Institute of Medical Sciences (AIIMS), Bilaspur, Himachal Pradesh',
-            orcid: '0000-0003-1852-0832',
-            email: 'dr.nidhi.anat@aiimsbilaspur.edu.in',
-          },
-        ],
-      },
-      {
-        title: 'Joint Editor',
-        members: [
-          {
-            name: 'Dr Bhagya Shree',
-            qualification: 'MBBS, MS Anatomy',
-            designation: 'Associate Professor',
-            institution: 'All India Institute of Medical Sciences (AIIMS), Bilaspur, Himachal Pradesh',
-            orcid: '0000-0001-9547-5014',
-            email: 'dr.bhagyashree.anat@aiimsbilaspur.edu.in',
-          },
-        ],
-      },
-      {
-        title: 'Members of Editorial Board',
-        members: [
-          {
-            name: 'Dr Anjali Aggarwal',
-            qualification: 'MBBS, MD Anatomy',
-            designation: 'Professor & Head',
-            institution: 'Post Graduate Institute of Medical Sciences & Research (PGIMER), Chandigarh',
-            orcid: '0000-0001-6523-5052',
-            email: 'aggarwal.anjali@pgimer.edu.in',
-          },
-          {
-            name: 'Dr Kanchan Kapoor',
-            qualification: 'M.Sc, PhD Anatomy',
-            designation: 'Professor',
-            institution: 'Government Medical College & Hospital, Chandigarh',
-            orcid: '0000-0003-0763-2900',
-            email: 'kanchankapoor62@gmail.com',
-          },
-        ],
-      },
-      {
-        title: 'Members of Advisory Board',
-        members: [
-          {
-            name: 'Dr Subhash Kaushal',
-            qualification: 'MBBS, MS Anatomy',
-            designation: 'Retd. Professor',
-            institution: 'Government Medical College, Patiala, Punjab',
-            orcid: null,
-            email: 'subhashkaushal1989@gmail.com',
-          },
-        ],
-      },
-    ],
-  },
+ editorialBoard: {
+  eyebrow: 'About Journal',
+  heading: 'Editorial Board',
+  sections: [
+    {
+      title: 'Editor-in-Chief',
+      members: [
+        {
+          name: 'Dr Nidhi Puri',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Professor & Head',
+          institution: 'All India Institute of Medical Sciences (AIIMS), Bilaspur, Himachal Pradesh',
+          orcid: '0000-0003-1852-0832',
+          email: 'dr.nidhi.anat@aiimsbilaspur.edu.in',
+        },
+      ],
+    },
+    {
+      title: 'Joint Editor',
+      members: [
+        {
+          name: 'Dr Bhagya Shree',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Associate Professor',
+          institution: 'All India Institute of Medical Sciences (AIIMS), Bilaspur, Himachal Pradesh',
+          orcid: '0000-0001-9547-5014',
+          email: 'dr.bhagyashree.anat@aiimsbilaspur.edu.in',
+        },
+      ],
+    },
+    {
+      title: 'Members of Editorial Board',
+      members: [
+        {
+          name: 'Dr Anjali Aggarwal',
+          qualification: 'MBBS, MD Anatomy',
+          designation: 'Professor & Head',
+          institution: 'Post Graduate Institute of Medical Sciences & Research (PGIMER), Chandigarh',
+          orcid: '0000-0001-6523-5052',
+          email: 'aggarwal.anjali@pgimer.edu.in',
+        },
+        {
+          name: 'Dr Kanchan Kapoor',
+          qualification: 'M.Sc, PhD Anatomy',
+          designation: 'Professor',
+          institution: 'Government Medical College & Hospital, Chandigarh',
+          orcid: '0000-0003-0763-2900',
+          email: 'kanchankapoor62@gmail.com',
+        },
+        {
+          name: 'Dr Punita Salwan',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Professor',
+          institution: 'Shri Guru Ram Das Institute of Medical Sciences & Research, Amritsar, Punjab',
+          orcid: '0000-0002-4777-8712',
+          email: 'punitasalwan@gmail.com',
+        },
+        {
+          name: 'Dr Anju Partap',
+          qualification: 'MBBS, MD Anatomy',
+          designation: 'Professor & Head',
+          institution: 'Indira Gandhi Medical College, Shimla',
+          orcid: '0009-0000-4495-8593',
+          email: 'dranjupartapk@gmail.com',
+        },
+        {
+          name: 'Dr Anu Sharma',
+          qualification: 'MBBS, MD Anatomy, CMCL-FAIMER, Dip Bioethics',
+          designation: 'Professor',
+          institution: 'Dayanand Medical College & Hospital (DMCH), Ludhiana, Punjab',
+          orcid: '0000-0003-3052-4051',
+          email: 'dr_anu_sharma@dmch.edu',
+        },
+        {
+          name: 'Dr Priti Chaudhary',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Professor & Head',
+          institution: 'All India Institute of Medical Sciences (AIIMS), Bathinda, Punjab',
+          orcid: '0000-0002-5869-1743',
+          email: 'chaudhary.priti1@aiimsbathinda.edu.in',
+        },
+        {
+          name: 'Dr Yogesh Ashok Sontakke',
+          qualification: 'MBBS, MD Anatomy',
+          designation: 'Professor',
+          institution: 'Jawaharlal Institute of Postgraduate Medical Education & Research (JIPMER), Puducherry',
+          orcid: '0000-0002-2592-2605',
+          email: 'drypgeshas@gmail.com',
+        },
+        {
+          name: 'Dr Tulika Gupta',
+          qualification: 'MBBS, MD Anatomy',
+          designation: 'Additional Professor',
+          institution: 'Post Graduate Institute of Medical Sciences & Research (PGIMER), Chandigarh',
+          orcid: '0000-0003-4910-1796',
+          email: 'tulikag11@gmail.com',
+        },
+        {
+          name: 'Dr Har Simarjit Kaur',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Associate Professor',
+          institution: 'Government Medical College, Patiala, Punjab',
+          orcid: '0000-0002-6594-2977',
+          email: 'dr.harsimarjit@gmail.com',
+        },
+        {
+          name: 'Dr Shveta Swami',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Professor',
+          institution: 'Kalpana Chawla Government Medical College, Karnal, Haryana',
+          orcid: '0000-0002-1074-3305',
+          email: 'shveta_swami@rediffmail.com',
+        },
+        {
+          name: 'Dr Gaurav Agnihotri',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Associate Professor',
+          institution: 'Government Medical College, Amritsar',
+          orcid: '0000-0002-7841-6810',
+          email: 'anatomygaurav@yahoo.com',
+        },
+        {
+          name: 'Dr Sushant Swaroop Das',
+          qualification: 'MBBS, MD Anatomy',
+          designation: 'Associate Professor',
+          institution: 'All India Institute of Medical Sciences (AIIMS), Vijaypur, Jammu',
+          orcid: '0000-0002-2212-7761',
+          email: 'sushant.swaroopdas@aiimsjammu.edu.in',
+        },
+      ],
+    },
+    {
+      title: 'Members of Advisory Board',
+      members: [
+        {
+          name: 'Dr Subhash Kaushal',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Retd. Professor',
+          institution: 'Government Medical College, Patiala, Punjab',
+          orcid: null,
+          email: 'subhashkaushal1989@gmail.com',
+        },
+        {
+          name: 'Dr Usha Chhabra',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Retd. Professor & Head',
+          institution: 'Government Medical College, Patiala, Punjab',
+          orcid: null,
+          email: 'drdpt49@gmail.com',
+        },
+        {
+          name: 'Dr Gopichand V.V. Patnaik',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Retd. Professor & Head',
+          institution: 'MMIMSR, Mullana, Haryana',
+          orcid: '0000-0002-2410-3413',
+          email: 'dr@live.in',
+        },
+        {
+          name: 'Dr S. L Jethani',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Professor',
+          institution: 'Graphic Era Institute of Medical Sciences, Dehradun',
+          orcid: '0009-0004-7049-0567',
+          email: 'drjethani_sl@rediffmail.com',
+        },
+        {
+          name: 'Dr Ravikant Sharma',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Senior Professor',
+          institution: 'Maharishi Markandeshwar Medical College & Hospital (MMMCH), Solan',
+          orcid: null,
+          email: 'drravikantanatomy@gmail.com',
+        },
+        {
+          name: 'Dr Rajan Singla',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Professor & Head',
+          institution: 'Government Medical College, Patiala, Punjab',
+          orcid: '0009-0004-3866-4731',
+          email: 'rajananat@gmail.com',
+        },
+        {
+          name: 'Dr Mukesh Singla',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Professor & Head',
+          institution: 'All India Institute of Medical Sciences (AIIMS), Rishikesh, Uttarakhand',
+          orcid: '0000-0001-6792-0627',
+          email: 'mukesh.ana@aiimsrishikesh.edu.in',
+        },
+        {
+          name: 'Dr Gopal Gupta',
+          qualification: 'MBBS, MD Anatomy, DNB',
+          designation: 'Professor & Head',
+          institution: 'Pt. B.D. Sharma Post Graduate Institute of Medical Sciences, Rohtak, Haryana',
+          orcid: '0000-0002-9382-9381',
+          email: 'drgopalanatomy@gmail.com',
+        },
+        {
+          name: 'Dr Susheela Rana',
+          qualification: 'MBBS, MD Anatomy',
+          designation: 'Professor & Head',
+          institution: 'SLBS GMC, Ner Chowk, Mandi, H.P.',
+          orcid: null,
+          email: 'susheelarana919@gmail.com',
+        },
+        {
+          name: 'Dr Anupama Mahajan',
+          qualification: 'MBBS, MS Anatomy, ACME Fellow',
+          designation: 'Director Principal cum Professor',
+          institution: 'Shri Guru Ram Das Institute of Medical Sciences & Research, Amritsar, Punjab',
+          orcid: '0009-0002-9883-358X',
+          email: 'anupamasgrd@gmail.com',
+        },
+        {
+          name: 'Dr Lovesh Shukla',
+          qualification: 'MBBS, MS Anatomy',
+          designation: 'Senior Professor',
+          institution: 'Maharaja Agarsen Medical College, Agroha, Hisar, Haryana - 125047',
+          orcid: '0000-0003-4828-8093',
+          email: 'drlovesh@gmail.com',
+        },
+        {
+          name: 'Dr Maneesha Sharma',
+          qualification: 'MBBS, MS Anatomy, PhD',
+          designation: 'Professor & Head',
+          institution: 'B.R. Ambedkar Institute of Medical Sciences, Mohali',
+          orcid: '0000-0001-5097-0767',
+          email: 'sksharma2212@gmail.com',
+        },
+      ],
+    },
+  ],
+},
   currentIssue: {
     eyebrow: 'Current Issue',
     heading: 'Current Issue',
@@ -282,26 +450,53 @@ export default {
     ],
   },
   advertisement: {
-    eyebrow: 'Business Opportunities',
     heading: 'Advertisement',
-    intro: 'The journal accepts advertisements that support scientific communication while preserving editorial independence and reader trust.',
-    sections: [
-      {
-        title: 'Advertising Policy',
-        paragraphs: [
-          'Advertisements are reviewed independently from editorial decisions. The journal and publisher do not endorse products or services solely because they appear in the publication.',
-          'Sponsored content must be truthful, relevant, and compliant with ethical standards. The journal reserves the right to decline material that is misleading or inappropriate.',
-        ],
+    intro: {
+      label: 'Advertisements can be sent to:',
+      company: 'M/s Jaypee Brothers Medical Publishers (P) Ltd',
+      addressLines: [
+        '4357-B/4C, Ansari Road, Daryaganj,',
+        'New Delhi - 110 002, INDIA',
+      ],
+      phone: '+91-11-43574357 (ext. 5117), +91-8130572567',
+      contactPerson: 'Mr Sanjeev Kumar',
+      email: 'sanjeev.kumar@jaypeebrothers.com',
+      website: 'www.jaypeejournals.com',
+      policyNote: {
+        prefix: 'For the advertisement policy, ',
+        linkLabel: 'click here.',
+        href: '/journal/AACS/page/policy',
       },
-      {
-        title: 'Eligibility',
-        bullets: [
-          'Advertisements must be verifiable and supported by appropriate product information.',
-          'The journal will not accept advertisements promoting harmful or inappropriate products.',
-          'Editorial decisions remain independent of advertisers and sponsors.',
-        ],
+    },
+    technicalDetails: {
+      title: 'Technical Details',
+      rows: [
+        { label: 'Paper size', value: '8.5 x 11 inches' },
+        { label: 'Print size', value: '7.5 x 10 inches' },
+        { label: 'Digital file format', value: 'EPS on CD (at 300 dpi resolution)' },
+        { label: 'Printed on art paper using offset printing', value: null },
+      ],
+      diagram: {
+        imageKey: 'paperSizeDiagram',
+        alt: 'Diagram showing 8.5 x 11 inch outer paper size with a 7.5 x 10 inch print area inside',
+        outerLabel: '8.5 x 11 inches',
+        innerLabel: '7.5 x 10 inches',
       },
-    ],
+    },
+    schedule: {
+      title: 'Schedule',
+      paragraphs: [
+        'Please check the schedule of the journal with us through email and plan accordingly. We accept advertisements throughout the year. Email ID as mentioned above.',
+        'Advertisement material, along with purchase order and payment, should reach us at least four weeks before the scheduled print date.',
+      ],
+    },
+    paymentDetails: {
+      title: 'Payment Details',
+      paragraphs: [
+        'Payment should be in favour of "Jaypee Brothers Medical Publishers (P) Ltd." and should be payable at New Delhi, India.',
+        'Payment to be done at the time of submitting the advertisement material/booking the advertisement. Please send your advertisement request, payment and advertisement material to the address given above. The editorial board reserves the right to accept or decline the advertisement.',
+      ],
+    },
   },
   rightsPermissions: {
     eyebrow: 'Business Opportunities',
@@ -330,7 +525,7 @@ export default {
     heading: 'Author Instructions',
     intro: 'Author instructions provide the complete submission and publishing workflow for this journal.',
   },
-  policy: {
+ policy: {
     eyebrow: 'About Journal',
     heading: 'Policy',
     sections: [
@@ -342,7 +537,7 @@ export default {
           { href: '#authors', label: 'Duties and Responsibilities of Authors' },
           { href: '#reviewers', label: 'Duties and Responsibilities of Reviewers' },
           { href: '#copyright', label: 'Copyright and Licensing' },
-          { href: '#misconduct', label: 'Handling Publication Malpractice or Research Misconduct' },
+          { href: '#misconduct', label: 'Handling publication malpractice or research misconduct' },
           { href: '#references', label: 'References' },
         ],
         subsections: [
@@ -350,8 +545,9 @@ export default {
             id: 'intro',
             title: '1.0 Introduction',
             paragraphs: [
-              'Scholarly publishing dates back to 1665, and the first peer-reviewed journal appeared in 1731. Today, scholarly communication runs largely through digital systems, forming a connected knowledge network that depends on everyone involved holding to consistent ethical standards.',
-              'This policy sets out the practices expected of everyone involved in publishing with the journal. It is based on the Code of Conduct and Best Practice Guidelines for Journal Editors issued by the Committee on Publication Ethics (COPE).',
+              'The concept of scholarly publication started in 1665 and the first peer reviewed journal was published in 1731. Today we are in the era of digital management of scholarly journal publications. The most vital component in the era of the scholarly communication system is that it acts as a building block in the development of a coherent and a respective network of knowledge. Hence, it is very crucial to lay down standards of expected ethical behaviour by all parties involved in the act of publishing.',
+              'This policy serves the purpose of ensuring the best publishing practices for everyone involved in the scholarly publishing process.',
+              'The publication ethics and malpractice statements are made with reference from the Code of Conduct and Best Practice Guidelines for Journal Editors of the Committee on Publication Ethics (COPE).',
             ],
           },
           {
@@ -359,52 +555,68 @@ export default {
             title: '2. Duties and Responsibilities of Editors',
             subsections: [
               {
-                title: '2.1 Chief Responsibilities',
+                title: '2.1 Chief responsibilities',
                 items: [
-                  'Chief Editors and Editors decide whether submitted manuscripts are accepted, based purely on the work\'s validity, originality, novelty, and fit with the journal\'s scope. They also ensure published material is properly archived, with digital support from the Publisher.',
-                  'Chief Editors and Editors evaluate manuscripts on intellectual merit alone, keep submissions confidential, and are responsible for deciding which articles are published and when.',
+                  'The Chief Editors and/or Editors are responsible for the publication decisions of all manuscripts submitted to the journal. These decisions to accept or reject a paper will be based solely on the validity, originality, and novelty of research works, as well as the relevance of the paper to the scope of the journal. Also, Editors should ensure all published materials are securely archived and the Publisher will provide the relevant digital support as needed.',
+                  'The Chief Editors and/or Editors shall be responsible to evaluate manuscripts fairly and solely on their intellectual merit and to ensure confidentiality of manuscripts and has the responsibility to decide when and which articles are to be published.',
                 ],
               },
               {
                 title: '2.2 Editors with the Publisher',
-                paragraphs: [
-                  'Editors work with the Publisher to continually improve the journal, update policies as needed, and maintain quality — while retaining independent editorial judgment on individual manuscripts. Together with editorial board members, they resolve disputes, support fair investigation of suspected misconduct (including hearing the accused party\'s response), and address any breaches of intellectual property or related legal issues.',
+                items: [
+                  'Editors work and collaborate with the Publisher to constantly improve the journal, revise the journal policies whenever required, and assure the quality of the materials published in the journal. Editors will independently decide whether to accept or reject a manuscript based on its quality and relevance to the scope of the journal.',
+                  'The Chief Editors, Editors, and members of the editorial board establish mechanisms to deal with any disagreements, dispute, or conflict between themselves and other stakeholders. Chief Editors should assist and support the Publisher to ensure proper investigation of any suspected misconducts for both published and unpublished papers, including, considering the responses from those suspected of misconduct to ensure a fair and unbiased investigation. Chief Editors also work and collaborate with the Publisher to handle potential breaches of intellectual property, laws, and related issues.',
                 ],
               },
               {
                 title: '2.3 Editors with Authors',
-                paragraphs: [
-                  'Editors aim to support authors and factor their feedback into how the journal is run. They watch for research or publication misconduct, and every manuscript is screened with plagiarism-detection software. Editors verify that authors have properly acknowledged funding, consent, and any required ethical approvals. Author instructions are kept accessible, and reviewer reports are shared with authors in full (barring anything offensive), with authors given the chance to respond.',
+                items: [
+                  'Editors should strive to fulfil the needs of authors and consider their views for journal process and management improvement.',
+                  'Editors should check for any research and publication misconducts by the authors. Editors should also ensure all manuscripts submitted and accepted are checked for plagiarized and fabricated contents (including plagiarized texts and inappropriately altered images). The Journal uses plagiarism-detection software to check for potential plagiarism or duplication of work in all manuscripts.',
+                  "Editors shall check and verify that the authors acknowledge any research funding/grants and written informed consent for publication involving human data, research permits, animal, and human ethic committee agreement forms, etc., for their submitted articles (if applicable).",
+                  "Editors should ensure publishing guidelines and author instructions are available to the authors. Editors should send the peer reviewer(s) reports to the authors in their entirety unless these reports contain offensive or discourteous statements. They should also allow authors to respond to the reviewers' comments.",
                 ],
               },
               {
                 title: '2.4 Editors with Reviewers',
-                paragraphs: [
-                  'Editors assign manuscripts only to qualified, unbiased reviewers with relevant expertise, and maintain a reviewer database, removing anyone who consistently delivers poor reviews. They may guide reviewers on writing their reports, require confidentiality, and ask reviewers to declare conflicts of interest. Reviewers themselves are expected to disclose any competing interest before agreeing to review, may decline for conflict-of-interest or knowledge-gap reasons, must review fairly and flag any ethical concerns to the Chief Editor, and must keep submission content confidential while respecting review deadlines (extensions are at the Chief Editor\'s discretion).',
+                items: [
+                  'Editors will ensure all published articles have been reviewed in timely manner and is done by unbiased and qualified or appropriate reviewers with relevant expertise and free from disqualifying competing interests. Editors should maintain a database of suitable reviewers and remove reviewers who consistently submit poor quality reviewer reports.',
+                  'Editors may guide reviewers on the preparation of reviewer report. They should also require that the reviewers handle the manuscripts as confidential documents and without disclosure to the third party. Editors should also inform the reviewers of the need to declare any potential conflict of interests (if applicable). They should also ensure freedom of expression by the reviewers, especially on issues related to publication ethics and misconducts, manuscript originality and validity, etc.',
+                  'Reviewers have the liabilities to disclose any competing interest before agreeing to review a submission and may refuse to review any submission due to a conflict of interest or inadequate knowledge.',
+                  'Reviewers are also obliged to review all submissions objectively, fairly and professionally, reveal any ethical misconduct encountered while reviewing to the Chief Editor for further action and should ensure the originality of a submission and be alert to any plagiarism and redundant publication.',
+                  'Reviewers must not discuss the content of the submission without permission and adhere to the time allocated for the review process. They can make an application request for an extension to review the submission, and this depends on the discretion of the Chief Editor or Editor(s) to approve or not.',
                 ],
               },
               {
                 title: '2.5 Editors with Editorial Board Members',
-                paragraphs: [
-                  'Chief Editors recruit qualified board members and give them clear guidance on their roles. They consult board members on journal direction and challenges, and ensure members receive the training and tools needed for editorial work. In turn, board members are expected to actively support the journal, act as its ambassadors, and review manuscripts assigned to them.',
+                items: [
+                  'Chief Editors should identify qualified editorial board members who can actively contribute to high standard journal processing and management. Comprehensive and clear guidelines with precise terms of references should be provided to the editorial board members about their expected roles and duties. Chief Editors and/or Editors should consult the editorial board members about the improvement of the journal processing and managements, challenges, and future directions.',
+                  'Chief Editors and/or Editors should ensure adequate training and technologies related to the editorial processing are provided to relevant members of the editorial board (including themselves).',
+                  'The Board Members shall actively contribute to the development and the greater good of the journal and act as ambassadors for the journal. They have to continuously support and promote the journal and also review any work assigned to them.',
                 ],
               },
               {
-                title: '2.6 Disclosure and Conflicts of Interest',
-                paragraphs: [
-                  'Editors may not disclose information from a manuscript under review, or use it for personal benefit. They must avoid commercial pressures that could compromise editorial standards, and must declare any financial or personal conflict of interest, stepping back from decisions on any affected manuscript. Editors submitting their own work to the journal must disclose this and stay out of that manuscript\'s review and decision process entirely.',
+                title: '2.6 Disclosure and Conflicts of Interests',
+                items: [
+                  'The Chief Editors and/or Editors are not allowed to disclose any information in the manuscript that is being reviewed to others or use the information from research data described in the manuscript for personal benefits.',
+                  'The Chief Editors and/or Editors should avoid any business needs and commercial considerations that may compromise the intellectual and ethical standards of the article publication of their journal. A conflict of interest may exist when the Chief Editors and/or Editors has a financial or personal interest that could affect his/her professional judgement on the manuscript. In this event, the Chief Editors and/or Editors hereby should disclose the conflict of interest and shall take reasonable steps to secure and withhold themselves from making any editorial decision for those manuscripts.',
+                  'The Chief Editors and/or Editors may submit manuscripts to their journal for publication consideration. However, they should declare this in their manuscripts. They cannot be involved in the reviewing process and should avoid making editorial decisions related to their manuscript.',
                 ],
               },
               {
                 title: '2.7 Timeliness of the Publication Process',
                 paragraphs: [
-                  'Editors track how long each stage of publishing takes, from submission to acceptance or rejection, monitor reviewer and editor performance and any backlog, and aim to keep decisions and each issue\'s publication on schedule.',
+                  "The Chief Editors and/or Editors must monitor the turnaround time for each publishing step from manuscript receipt to publication or rejection. They need to ensure the timeliness of publication in each issue. They must track reviewers' and editors' performance, the backlog of accepted manuscripts, and provide prompt responses and decisions for manuscripts.",
                 ],
               },
               {
                 title: '2.8 Errata, Retractions and Clarifications',
                 paragraphs: [
-                  'The journal follows ICMJE recommendations on corrections and version control. Errata, clarifications, or retractions are published as quickly as possible once an issue is identified after publication, and the corrected or retracted article is always directly linked to the original online.',
+                  'The Journal follows the International Committee of Medical Journal Editors (ICMJE) recommendation to address the errata, retractions and clarifications https://www.icmje.org/recommendations/browse/publishing-and-editorial-issues/corrections-and-version-control.html',
+                ],
+                items: [
+                  'The Journal will publish errata or corrections, clarifications, or retractions of any materials when needed and as quickly as possible if competing interests are detected after publication.',
+                  'A direct link between the original article and the errata or the corrected articles will be provided for all online journals.',
                 ],
               },
             ],
@@ -416,85 +628,99 @@ export default {
               {
                 title: '3.1 Authorship',
                 paragraphs: [
-                  'Authorship is reserved for those who made a substantial contribution to the research and its write-up. All contributing co-authors must be listed and must agree to the submission. Any change to the author list, before or after publication, needs approval from the Chief Editors or Editors, and the corresponding author must confirm all co-authors have consented to the submission.',
+                  'The Journal considers an author as the one who has significantly or substantially contributed to the experimentation and interpretation of the data, in addition to writing the manuscript for publication. All those who have made substantial contributions should be listed as co-authors. All co-authors who have contributed appropriate portions of the content must agree to the manuscript submission. Any requests for addition or removal of the author(s) before/after publication must seek approval of the Chief Editors/Editors. The corresponding authors must ensure that all the authors have agreed and approved the manuscript submission to the journal.',
                 ],
               },
               {
                 title: '3.2 Author Responsibilities',
                 items: [
-                  'Authors must report results honestly, with methods described clearly enough for others to repeat the work, and must flag any inaccuracy discovered after publication so it can be corrected. Authors remain accountable for their work\'s integrity.',
-                  'Submissions must be new, original work — not reproduced from elsewhere. Simultaneous submission to multiple journals is discouraged, though authors may resubmit elsewhere once formally rejected or after a withdrawal is accepted.',
+                  'Authors should state their results clearly, honestly, and without fabrication, falsification, or inappropriate data manipulation. The methods used in the work should be clearly and unambiguously described so that the findings can be repeated and confirmed by other researchers.',
+                  'Authors are responsible to inform the Chief Editor or the Publisher for any inaccuracy of data in their published work so that correction or retraction of article can be done.',
+                  'Authors are responsible to ensure only new and original work is submitted.',
+                  'Authors must not reproduce work that has been previously published in other journals and discourage multiple submissions that are being reviewed or considered by other journals simultaneously.',
+                  'Authors are allowed to publish their work elsewhere after receiving a formal rejection from the journal or if their request to withdraw their work is officially accepted by the journal.',
+                  'Authors should make significant contributions and be held accountable for any shortcoming in their work.',
                 ],
               },
               {
                 title: '3.3 Research Misconduct',
-                paragraphs: [
-                  'Plagiarism, fabrication, and falsification are treated as research misconduct, and authors must avoid all three (see Section 6.0). Any such issue is reported to the Chief Editors, who investigate with the Publisher\'s support.',
+                items: [
+                  'Copying, stealing, fabricating, or manipulating intellectual properties of another person constitute acts of plagiarism whereas fabrication and falsification are considered fraud or research misconduct. It is incumbent on all authors to refrain from acts of plagiarism, fabrication, or falsification associated with the submitted manuscript (see Section 6.0 for details).',
+                  'Any plagiarism, fraud or research misconduct will be reported to the Journal Chief Editors. An investigation into any plagiarism, fraud or research misconduct, or publication malpractices will be done by the Journal Chief Editors with the assistance of the Publisher.',
                 ],
               },
               {
                 title: '3.4 Image Manipulation',
-                paragraphs: [
-                  'Adding, removing, moving, or obscuring features within an image is not permitted. Adjustments for overall clarity — brightness, contrast, colour balance — are acceptable only if they don\'t hide or remove information present in the original. Suspected manipulation is referred to the Chief Editors, who may request original data for comparison; confirmed manipulation is treated as misconduct and can lead to rejection (see Section 6.0).',
+                items: [
+                  'Manipulation of images may lead to manipulation of results and compromise the image integrity. It is prohibited to enhance, obscure, move, remove, or introduce a specific feature within an image. Exception and acceptable manipulation include manipulating images for improved clarity such as adjustments of brightness, contrast or colour balance as long as they do not obscure or eliminate information present in the original material. An act of wrongdoing in manipulating images which could be seen or detected as scientific ethical abuse will not be accepted and will be action will be taken accordingly.',
+                  'Any submitted digital images with suspected manipulations or has been manipulated, this matter will be referred to the Chief Editors/Editors. Primary data may be requested from the authors concerned for comparison with the submitted digital images. Any images/data proven to have been manipulated may be considered as research misconduct. An investigation will be carried out by the Journal and may result in rejection of the manuscript by the journals (see Section 6.0 for details).',
                 ],
               },
               {
                 title: '3.5 Multiple, Redundant or Concurrent Publications',
                 items: [
-                  'Where a manuscript reuses previously published figures, data, or copyrighted material, authors must credit the source, secure permission from the original publisher, and cite the original work in the relevant caption.',
-                  'On submission, authors confirm the work hasn\'t been published or submitted elsewhere (preprints excepted). Concurrent submission of the same core research to more than one journal is not permitted — though publishing a related abstract, lecture, or thesis excerpt is fine.',
+                  'In the case of authors using published figures, data and/or copyrighted materials in the submitted manuscript, it is the responsibility of authors and corresponding authors to: (a) acknowledge the sources in the manuscript; (b) obtain permission from the original publisher; and (c) cite the original article and acknowledge the copyright holder in the figure/table caption.',
+                  'Upon submission of the manuscript, the author(s) must confirm and agree that no similar work has been or will be submitted or published elsewhere in any language (exception – preprint servers).',
+                  'The author is not permitted to submit or publish concurrently the same essential research manuscript in more than one journal of primary publication. This is considered as unethical behaviour.',
+                  'Notwithstanding, the author is allowed to submit or publish a similar manuscript in form of abstract or as part of a published lecture or academic thesis.',
                 ],
               },
               {
                 title: '3.6 Disclosure and Conflicts of Interest',
-                paragraphs: [
-                  'Any financial or personal interest that could influence an author\'s judgment — funding sources, stock ownership, patents, and similar — must be disclosed at submission. Failing to declare a conflict can undermine the journal\'s credibility.',
+                items: [
+                  'Transparency is vital in scientific research and publication. A conflict of interest may exist when an author, financial or grant supporter, stock owner, patent-licensing owner, editor, or the reviewer has a financial or personal interest that could affect his/her professional judgement or influence his/her actions.',
+                  'Failure of the author(s) to declare any financial or personal conflicts may undermine the credibility of the journal. Thus, all authors are expected to disclose any conflict of interest during the submission of their manuscripts.',
                 ],
               },
               {
                 title: '3.7 Availability of Materials and Data Access',
-                paragraphs: [
-                  'Once accepted, authors agree to make underlying samples and data available to the scientific community for non-commercial use — this can include biological samples, sequence data, images, or statistical data. Manuscripts should include enough detail for the work to be repeated, with reasonable safeguards in place to protect authors\' legitimate interests in how materials are reused.',
+                items: [
+                  'Upon acceptance of publication, all authors must agree that sample materials and data described in the article are to be made available to the scientific community for non-commercial purposes. Such sample materials and data may include but are not limited to, biological samples, sequence data, images, statistical data, etc.',
+                  'Manuscripts must contain sufficient details, and necessary materials or information must be made available upon request to enable the research work that can be repeated by other researchers. However, the legitimate interests of the authors will be protected with appropriate agreements to restrict the field of use of sample materials or data that have been made available.',
                 ],
               },
               {
-                title: '3.8 Biosecurity, Animal Use and Research Permits',
-                paragraphs: [
-                  'The journal will not support research involving infectious agents that could be used as biological weapons; the editorial board reviews any manuscript that raises such concerns. All research must comply with relevant national laws, and studies involving animals or human subjects require prior approval from the appropriate ethics committee, available on request — misconduct here can void the submission. Studies using biological resources or samples need the relevant government permit, with the permit number listed in the methods section, and informed consent (with privacy protected) must be documented for any human-subject research.',
+                title: '3.8 Biosecurity, Animal Use and Research Permit',
+                items: [
+                  'The Journal discourages any use of infectious agents or their derivatives that could potentially be used as biological weapons, and contrary to the welfare of mankind. Members of the Journal Editorial Board will evaluate any manuscript that may have raised such issues.',
+                  'Any experiment or research conducted must comply with all current laws of the country or countries involved. Authors describing experimental studies involving animals/human in their manuscripts must obtain approval from their respective Institutional Animal/Human Ethics Committee before manuscript submission and this document must be made available upon request. Misconduct in animal use will result in revocation of the submitted manuscript.',
+                  'Authors describing research which involves biological resources or collection of biological samples in their manuscripts must obtain research permits from their respective local or state government department (such as Forest Department, Fishery Department, etc.). Permit number or approval reference number (if any) must be listed in the methods section of the manuscript.',
+                  'Authors should include a statement in the manuscript that informed consent obtained for implementation with human subjects and the privacy right of human subjects must always be observed.',
                 ],
               },
               {
                 title: '3.9 Reporting Guidelines',
                 paragraphs: [
-                  'Authors should follow ICMJE reporting standards, matched to study type:',
+                  'The authors must follow the reporting guidelines as per the ICMJE instructions:',
                 ],
                 bullets: [
-                  'Randomized controlled trials — CONSORT flowchart and checklist',
-                  'Observational studies — STROBE',
-                  'Systematic reviews and meta-analyses — PRISMA flowchart, or QUOROM',
-                  'Diagnostic accuracy studies — STARD',
-                  'Case reports — CARE',
+                  'For Randomized Controlled Trials - CONSORT flowchart along with checklist to be submitted',
+                  'For Observational Studies - STROBE',
+                  'For Systematic Reviews & Meta-analyses - PRISMA flowchart to be submitted',
+                  'For Diagnostic Accuracy Studies - STARD',
+                  'For Systematic reviews and meta-analyses - QUOROM',
+                  'For Case Reports - CARE',
                 ],
                 extraParagraphs: [
-                  'Further guidance is available from EQUATOR and the NLM\'s Research Reporting Guidelines and Initiatives.',
+                  "Other good sources for reporting guidelines are EQUATOR and the NLM's Research Reporting Guidelines and Initiatives.",
                 ],
               },
               {
-                title: '3.10 Article Processing Charges (APC)',
+                title: '3.10 Article-processing charges (APC)',
                 paragraphs: [
-                  'Publishing in this journal carries no article-processing charge.',
+                  'There are no article processing charges for publishing an article in the journal.',
                 ],
               },
               {
-                title: '3.11 Reviewer Suggestions',
+                title: '3.11 Reviewer suggestions',
                 paragraphs: [
-                  'Peer review is double-blind. Authors may suggest suitable reviewers or ask to exclude specific individuals over a possible conflict of interest, but the final choice of reviewer rests with the journal\'s editors.',
+                  'The journal follows a double-blind peer-review process. Authors are welcome to suggest suitable reviewers to review their submitted manuscript. Authors may also request to exclude individuals from reviewing their manuscript due to a possible conflict of interest. However, the decision on the reviewers is made by the journal editors.',
                 ],
               },
               {
-                title: '3.12 Confidential Process',
+                title: '3.12 Confidential process',
                 paragraphs: [
-                  'All correspondence between authors and the journal — emails, reviewer reports, and so on — is confidential. Authors may not post confidential material publicly without the journal\'s prior permission, whether the manuscript is ultimately published or rejected.',
+                  "All the communication between the authors and the journal must be treated as confidential, including email communication, reviewers' reports, etc. Authors are restricted from posting any confidential materials on any website or published materials, without prior permission from the journal, regardless of the submission is published or rejected.",
                 ],
               },
             ],
@@ -505,14 +731,20 @@ export default {
             subsections: [
               {
                 title: '4.1 Peer Review Ethics',
-                paragraphs: [
-                  'Review is double-blind, with two independent external reviewers chosen for relevant expertise and willingness to commit the necessary time; their comments guide both the publication decision and improvements to the manuscript. Reviewers assess submissions objectively against criteria like originality, significance, relevance, and evidence for the conclusions drawn, and check that methods and citations are properly presented. Reviews should avoid offensive or discourteous language and follow the journal\'s scope and quality guidelines. Reviews are typically due within two weeks, with extensions requiring editor approval, and reviewers must keep the manuscript and all related correspondence strictly confidential.',
+                items: [
+                  'The journal follows a double-blind peer-review process. Chief Editor/Editors will select and appoint potential reviewers (two independent external reviewers) who are expected to have related expertise or have the suitable expertise on the relevant field, willing to give full cooperation and commitment and time for reviewing an assigned manuscript to ensure high standards of peer-reviewing. The comments given by the reviewers will be used to assist the Chief Editor/Editors in deciding on the publication and to guide the authors in improving the overall quality of their manuscripts.',
+                  'Reviewers should review all submissions objectively, fairly, and professionally. When proposing acceptance of a manuscript, the reviewer must ensure that the manuscript meets these criteria: originality and significance, research work is of importance to the research community in the related field, interesting to scientists in other related fields, and provides evidence for its conclusions. Reviewers should also ensure that the methods are adequately explained and that all relevant works are cited properly.',
+                  'Reviewers should avoid giving comments or statements that are offensive, libellous or discourteous. Reviewers are to abide by the guidelines set by the journals for the scope, content and quality of review and comply with the journal publication policy by the Publisher.',
+                  'Reviewers should follow the deadline given to review an assigned manuscript. Typically, a manuscript should be reviewed by the reviewer within two weeks. Any extension of reviewing duration must be approved by the Editors concerned. Reviewers may be requested by Editors to review or to give further advice on a revised manuscript.',
+                  'Reviewers should maintain the confidentiality of the peer-review process. All the communication between the reviewers and the journal editors, as well as any manuscript received by the reviewer, must be treated confidentially and must not at any stage be disclosed or discussed with anyone.',
                 ],
               },
               {
                 title: '4.2 Disclosure and Conflict of Interest',
-                paragraphs: [
-                  'Reviewers whose own work conflicts or competes with the authors\' will not be assigned that manuscript. Any potential conflict must be disclosed to the editors before a reviewer agrees to take on a manuscript, and editors decide whether to continue using a reviewer who discloses one. Reviewers may also decline a review outright over a conflict of interest or insufficient expertise.',
+                items: [
+                  'A conflict of interest may exist when a reviewer has a financial or personal interest that could affect his/her professional judgement on the manuscript. Potential reviewers who conduct their research works which are conflicting or competes with the authors will not be appointed.',
+                  'A potential reviewer must disclose any potential financial or personal conflict (if any) to the Editors before agreeing to review a manuscript. Editors will decide whether to cease the use of reviewers who have such a potential conflict of interest.',
+                  'A reviewer may opt to refuse to review any submission due to a conflict of interest or inadequate knowledge.',
                 ],
               },
             ],
@@ -521,15 +753,16 @@ export default {
             id: 'copyright',
             title: '5.0 Copyright and Licensing',
             paragraphs: [
-              'All open-access articles are published under the CC BY-NC 4.0 license (Creative Commons Attribution-Non-Commercial 4.0 International), allowing free use, distribution, and reproduction in any medium for non-commercial purposes, provided the original work is properly cited. Full license text is available at creativecommons.org/licenses/by-nc/4.0/legalcode.',
-              'At submission, authors complete the Open Access License Agreement Form, confirming that:',
+              'All open-access articles published are distributed under the terms of the CC BY-NC 4.0 license (Creative Commons Attribution-Non-Commercial 4.0 International Public License as currently displayed at http://creativecommons.org/licenses/by-nc/4.0/legalcode), which permits unrestricted use, distribution, and reproduction in any medium, for non-commercial purposes, provided the original work is properly cited.',
+              'Authors must submit the Open Access License Agreement Form when submitting the manuscript. By signing this form, the author agrees to the following:',
             ],
             items: [
-              'Authors retain copyright of their own article.',
-              'Authors grant the Publisher exclusive commercial and publishing rights.',
+              'Authors retain the copyright of their article',
+              'The authors grant exclusive commercial and publishing rights to the Publisher',
             ],
             extraParagraphs: [
-              'Commercial use of an article requires explicit permission from the Publisher, via journals.permissions@jaypeebrothers.com. Authors may also deposit the final electronic version in an institutional or centrally organized subject repository once published, provided they link to the published version and correctly attribute the journal and Publisher as the place of original publication.',
+              'For any commercial use of the article, explicit permission is required from the Publisher at journals.permissions@jaypeebrothers.com.',
+              "Authors are also entitled to deposit the final electronic version of the article into an institutional or centrally organised subject repository upon publication. They should include a link to the published version of the article on the journal's website, and the journal and Publisher should be attributed as the original place of publication, with correct citations given.",
             ],
           },
           {
@@ -539,28 +772,38 @@ export default {
               {
                 title: '6.1 Definition of Publication Malpractice or Research Misconduct',
                 paragraphs: [
-                  'The journal follows the U.S. Public Health Service\'s definition (42 CFR Part 93, June 2005), under which research misconduct means fabricating, falsifying, or plagiarizing in proposing, performing, or reviewing research, or in reporting results:',
+                  'The Journal adopts the definition of research misconduct by the United States Public Health Service Policies on Research Misconduct-42 CFR Part 93 (June 2005) as the following: "Research misconduct means fabrication, falsification, or plagiarism in proposing, performing, or reviewing research, or in reporting research results."',
                 ],
                 bullets: [
-                  'Fabrication — inventing data or results and recording or reporting them as real.',
-                  'Falsification — manipulating materials, equipment, or processes, or altering/omitting data so the research record no longer accurately reflects the work.',
-                  'Plagiarism — using another person\'s ideas, process, results, or words without proper credit.',
-                  'Honest error or a genuine difference of opinion is not considered misconduct.',
+                  'Fabrication is making up data or results and recording or reporting them.',
+                  'Falsification is manipulating research materials, equipment, or processes, or changing or omitting data or results such that the research is not accurately represented in the research record.',
+                  "Plagiarism is the appropriation of another person's ideas, process, results, or words without giving appropriate credit.",
+                  'Research misconduct does not include honest error or differences of opinion.',
                 ],
                 extraParagraphs: [
-                  'This section also draws on the Code of Conduct and Best Practice Guidelines from COPE, WAME, and ICMJE.',
+                  'The Journal also adopts the Code of Conduct and Best Practice Guidelines for Journal Editors and Journal Publisher in COPE, WAME and ICMJE in this policy.',
                 ],
               },
               {
                 title: '6.2 Provision for Action',
                 paragraphs: [
-                  'Allegations of misconduct are directed to the Chief Editors, who follow COPE\'s Core Practices and Ethical Oversight Flowcharts — covering duplicate publication, plagiarism, fabricated data, authorship disputes, undisclosed conflicts of interest, and reviewer misconduct. A misconduct finding requires compelling evidence of a significant, intentional or reckless departure from accepted research or publication practice. Where fabricated data or misconduct is found in a published article, the corresponding authors receive a copy for signed comment, which may be sent back to the original reviewers, and the matter may be referred to the authors\' institution. Clear plagiarism in a submission leads to rejection or required revision after the authors respond; in a published article, it results in retraction or a corrigendum (Section 6.3). The respondent has access to all materials related to the case and may appeal a decision within 30 days of being notified.',
+                  'Any research misconduct, complaints, and other related matters should be addressed to the Journal Chief Editors.',
+                ],
+                items: [
+                  "The Journal follows the Ethical Oversight Flowcharts in COPE's Core Practices when handling an allegation of any research misconduct/publication malpractice. The flowcharts include step-by-step guideline to handle ethical issues related to redundant (duplicate) publication, plagiarism, fabricated data in a submitted manuscript or published article, authorship problems, undisclosed conflict of interest in a submitted manuscript or published article, an ethical problem, reviewer misconduct, etc.",
+                  'The requirements for findings of research misconduct include: (a) the allegation be proven by compelling evidence for a significant departure in the research work or publication practices, and (b) the research misconduct is committed intentionally and/or recklessly.',
+                  "For refutations of published articles related to fabricated data or other research misconduct or ethical problem, a copy will be sent to the corresponding authors for signed comments, they will be peer-reviewed, and where possible, by the same reviewers. The journal may bring the attention of research work misconduct to the authors' institution asking for an investigation to ensure the integrity of the published data.",
+                  'For clear plagiarism (unattributed used a large portion of text/data) in a submitted manuscript, a copy of evidence will be sent to the corresponding authors for signed comments. If the author response is unsatisfactory or guilt admitted, the submission will either be rejected or revised. For clear plagiarism in a published article, this will result in either retraction or corrigendum (see Section 6.3).',
+                  'The respondent has access to all materials related to the allegation, its assessment, investigation, and decision.',
+                  'The findings and decision of publication malpractice or research misconduct may be appealed by the respondent. An appeal must be filed within 30 days after the decision is made and notified to the respondent.',
                 ],
               },
               {
                 title: '6.3 Erratum, Corrigendum, Retractions and Addendums',
-                paragraphs: [
-                  'The journal corrects previously published, peer-reviewed articles as needed: an erratum for an error made by the journal, a corrigendum for an author error, a retraction for invalid or unsound work, or an addendum for additional information about a published article. Confirmed serious misconduct can lead to sanctions ranging from article retraction to a ban on future submissions. Investigation outcomes may be published on the journal\'s website to inform the community, though the names of those found responsible are withheld from any public report.',
+                bullets: [
+                  'Journal will make amendments or correction of errors for peer-reviewed articles which have been previously published. The amendments can be in the form of erratum (or notification of error made by the journal), corrigendum (or notification of error made by authors), retraction (or notification of departure of research work or invalid work in a previously published article) or addendum (notification of additional information about a published article).',
+                  'The Journal may impose different types of sanctions to individuals who are found to be involved in serious publication malpractice or research misconduct with compelling evidence. These sanctions range from retraction of articles, the prohibition of submitting manuscripts to the journals.',
+                  'The reports of the investigation may be made available on the journal webpage to inform the scientific community, sponsors, readers, and users. However, the names of individuals found to have committed publication malpractice/research misconduct will be masked or removed from the reports.',
                 ],
               },
             ],
@@ -569,13 +812,13 @@ export default {
             id: 'references',
             title: '7.0 References',
             items: [
-              'COPE Code of Conduct | Committee on Publication Ethics (2025). publicationethics.org/membership/cope-code-of-conduct',
-              'Core Practices | Committee on Publication Ethics (2025). publicationethics.org/about/what-we-do/our-story/core-practices',
-              'Council of Science Editors (2018). CSE\'s White Paper on Promoting Integrity in Scientific Journal Publications. seaairweb.info',
-              'The European Code of Conduct for Research Integrity (2023). allea.org',
-              'Public Health Service Policies on Research Misconduct — 42 CFR Part 93 (June 2005). ori.hhs.gov',
-              'International Committee of Medical Journal Editors. icmje.org/recommendations',
-              'World Association of Medical Editors (WAME). wame.org/policies',
+              'COPE Code of Conduct | COPE: Committee on Publication Ethics (2025). Available at: https://publicationethics.org/membership/cope-code-of-conduct',
+              'Core Practices | COPE: Committee on Publication Ethics (2025). Available at: https://publicationethics.org/about/what-we-do/our-story/core-practices',
+              "Council of Science Editors (2018). CSE's White Paper on Promoting Integrity in Scientific Journal Publications. Available at: https://www.seaairweb.info/journal/3.CouncilofScientific-Editors-White-Paper.pdf",
+              'The European Code of Conduct for Research Integrity (2023). Available at: https://allea.org/wp-content/uploads/2023/06/European-Code-of-Conduct-Revised-Edition-2023.pdf',
+              'Public Health Service Policies on Research Misconduct-42 CFR Part 93 (June 2005). Available at: https://ori.hhs.gov/public-health-service-phs-policies-research-misconduct-%E2%80%93-42-cfr-part-93-%E2%80%93-june-2005',
+              'International Committee of Medical Journal Editors. Available at: http://www.icmje.org/recommendations/',
+              'World Association of Medical Editors (WAME). Available at: https://www.wame.org/policies',
             ],
           },
         ],

@@ -1,37 +1,83 @@
 import styles from './JournalInformation.module.css'
 
-const quickLinks = [
-  { href: '#aims', label: 'Aims & Scope' },
-  { href: '#ownership', label: 'Ownership and Management' },
-  { href: '#institution', label: 'About the Institution', subItem: true },
-  { href: '#publisher', label: 'About the Publisher', subItem: true },
-  { href: '#frequency', label: 'Publication frequency' },
-  { href: '#copyright', label: 'Copyright and Licensing' },
-  { href: '#openaccess', label: 'Open Access Policy' },
-  { href: '#selfarchiving', label: 'Self-Archiving Policy for Authors' },
-  { href: '#ethics', label: 'Publication Ethics and Malpractice Statement' },
-  { href: '#advertisement', label: 'Advertisement policy' },
-]
+const quickLinksColumns = [
+  [
+    {
+      href: "#aims",
+      label: "Aims & Scope",
+    },
+    {
+      href: "#ownership",
+      label: "Ownership and Management",
+      children: [
+        {
+          href: "#institution",
+          label: "About the Institution",
+        },
+        {
+          href: "#publisher",
+          label: "About the Publisher",
+        },
+      ],
+    },
+    {
+      href: "#frequency",
+      label: "Publication frequency",
+    },
+  ],
+  [
+    {
+      href: "#copyright",
+      label: "Copyright and Licensing",
+    },
+    {
+      href: "#openaccess",
+      label: "Open Access Policy",
+    },
+    {
+      href: "#selfarchiving",
+      label: "Self-Archiving Policy for Authors",
+    },
+    {
+      href: "#ethics",
+      label: "Publication Ethics and Malpractice Statement",
+    },
+    {
+      href: "#advertisement",
+      label: "Advertisement policy",
+    },
+  ],
+];
 
 export default function JournalInformation() {
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
         <div className={styles.pageContainer}>
-          <div className={styles.hero}>
-            <span className={styles.eyebrow}>About Journal</span>
-            <h1 className={styles.pageHeading}>Journal Information</h1>
-          </div>
+         
 
           <hr className={styles.divider} />
 
-          <ul className={styles.quickLinks}>
-            {quickLinks.map((link) => (
-              <li key={link.href} className={link.subItem ? styles.subItem : ''}>
-                <a href={link.href}>{link.label}</a>
-              </li>
+          <div className={styles.quickLinks}>
+            {quickLinksColumns.map((column, colIndex) => (
+              <ul key={colIndex} className={styles.quickLinksColumn}>
+                {column.map((item) => (
+                  <li key={item.href}>
+                    <a href={item.href}>{item.label}</a>
+                    {item.children && (
+                      <ul className={styles.subList}>
+                        {item.children.map((child) => (
+                          <li key={child.href} className={styles.subItem}>
+                            <a href={child.href}>{child.label}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
             ))}
-          </ul>
+          </div>
 
           <section id="aims" className={styles.sectionCard}>
             <h2 className={styles.sectionTitle}>Aims & Scope</h2>

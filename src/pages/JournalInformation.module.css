@@ -62,39 +62,59 @@
 
 /* ===== Quick links ===== */
 .quickLinks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px 24px;
-  list-style: none;
+  display: flex;
+  gap: 40px;
   margin: 0 0 28px;
   padding: 0;
 }
 
-.quickLinks li {
-  position: relative;
-  padding-left: 18px;
-  line-height: 1.9;
+.quickLinksColumn {
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.quickLinks li::before {
+.quickLinksColumn > li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.quickLinksColumn > li:last-child {
+  margin-bottom: 0;
+}
+
+.quickLinksColumn > li::before {
   content: "•";
   position: absolute;
   left: 0;
+  top: 0;
   color: #1f2429;
   font-size: 1rem;
-  top: 0;
 }
 
-.quickLinks .subItem {
-  padding-left: 32px;
+.subList {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.subItem {
+  position: relative;
+  padding-left: 14px;
   font-size: 0.95rem;
+  margin-bottom: 0 !important;
 }
 
-.quickLinks .subItem::before {
+.subItem::before {
   content: "○";
-  left: 18px;
-  font-size: 0.7rem;
+  position: absolute;
+  left: 0;
   top: 3px;
+  font-size: 0.7rem;
+  color: #1f2429;
 }
 
 .quickLinks a {
@@ -106,6 +126,13 @@
 
 .quickLinks a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+  .quickLinks {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /* ===== Section blocks ===== */
@@ -202,9 +229,5 @@
 @media (max-width: 960px) {
   .pageBg {
     padding: 18px 12px 36px;
-  }
-
-  .quickLinks {
-    grid-template-columns: 1fr;
   }
 }

@@ -1,55 +1,137 @@
 .pageBg {
-  min-height: 100vh;
-  background: linear-gradient(180deg, #fef2ff 0%, #eef2ff 100%);
-  color: #111827;
-  padding: 32px 24px 48px;
+  background: #fafbfc;
+  color: #1f2429;
+  padding: 32px 22px 48px;
 }
 
-.bodyLayout {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 32px;
-  max-width: 1400px;
+.pageContainer {
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 28px 20px;
+  padding: 0 24px;
 }
 
-.pageContainer { display: flex; flex-direction: column; gap: 22px; }
-
-.hero {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 28px 30px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-}
-
-.eyebrow {
-  font-size: 0.78rem;
+.pageHeading {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
   font-weight: 700;
-  letter-spacing: 0.18em;
-  color: #8b5cf6;
-  text-transform: uppercase;
-  margin-bottom: 0.85rem;
-  display: inline-block;
+  color: #1a1a1a;
 }
 
-.pageHeading { margin: 0 0 1rem; font-size: clamp(2rem, 3vw, 2.4rem); }
-
-.intro { margin: 0; color: #475569; line-height: 1.8; }
-
-.sectionCard {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 24px 28px;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+.divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 16px 0 24px;
 }
 
-.sectionTitle { margin: 0 0 0.8rem; font-size: 1.1rem; color: #111827; }
+.introBlock {
+  margin-bottom: 24px;
+}
 
-.bulletList { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.8rem; }
+.introLabel {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
 
-.bulletList li { color: #475569; line-height: 1.75; }
+.companyName {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 700;
+}
 
-.sectionCard p { margin: 0 0 1rem; color: #475569; line-height: 1.8; }
+.addressBlock p {
+  margin: 0 0 4px;
+  line-height: 1.6;
+}
 
-@media (max-width: 960px) { .bodyLayout { padding: 20px 16px; } }
+.policyNote {
+  margin: 12px 0 0;
+}
+
+.policyNote a {
+  color: #0177b5;
+  text-decoration: none;
+}
+
+.policyNote a:hover {
+  text-decoration: underline;
+}
+
+.technicalCard {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.technicalHeader {
+  background: #5a5a5a;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 16px;
+}
+
+.technicalBody {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px;
+  gap: 20px;
+}
+
+.technicalRows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.technicalRow {
+  display: flex;
+  justify-content: space-between;
+  max-width: 520px;
+}
+
+.rowLabel {
+  color: #1a1a1a;
+}
+
+.rowValue {
+  color: #1a1a1a;
+}
+
+.diagramWrapper {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.diagramImage {
+  width: 140px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.textSection {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.textSection p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .technicalBody {
+    flex-direction: column;
+  }
+
+  .diagramWrapper {
+    justify-content: center;
+  }
+}
