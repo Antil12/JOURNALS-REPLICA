@@ -2,6 +2,7 @@ import styles from './AuthorInstructions.module.css'
 import figImg from '../assets/fig.png'
 import tabImg from '../assets/tab.png'
 import watermarkImg from '../assets/watermark.png'
+import siteContent from '../config/siteContent'
 
 const abstractTable = [
   { col: 'Primary Research', rows: ['Aim & Background', 'Methods', 'Results', 'Conclusion', 'Clinical Significance'] },
@@ -52,6 +53,8 @@ function StructureTable({ data }) {
 }
 
 export default function AuthorInstructions() {
+  const { authorInstructions } = siteContent
+
   return (
     <div className={styles.pageBg}>
       <img
@@ -62,7 +65,10 @@ export default function AuthorInstructions() {
       />
       {/* ============ HEADING + DIVIDER + TOC — sits directly on the page, NOT inside the white card ============ */}
       <div className={styles.tocWrapper}>
-        <h1 className={styles.pageHeading}>Author Instructions</h1>
+        <div className={styles.hero}>
+          <span className={styles.eyebrow}>{authorInstructions.eyebrow}</span>
+          <h1 className={styles.pageHeading}>{authorInstructions.heading}</h1>
+        </div>
         <hr className={styles.divider} />
 
         <nav className={styles.tocNav} aria-label="Author Instructions sections">
