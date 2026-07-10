@@ -1,150 +1,88 @@
-/* ===== Page shell ===== */
 .pageBg {
   min-height: 100vh;
-  background: #f7f7f9;
-  color: #1f2429;
-}
-
-.bodyLayout {
-  display: flex;
-  flex-direction: column;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 28px 20px;
+  background: #ffffff;
+  color: #333;
+  font-family: sans-serif;
 }
 
 .pageContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  background: #ffffff;
-  padding: 28px 40px 60px;
-  border-left: 1px solid #e5e2ea;
-  min-height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
 }
 
-/* ===== Hero ===== */
-.hero {
-  padding-bottom: 16px;
-  margin-bottom: 4px;
-}
-
-.eyebrow {
-  color: #8e3f96;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  margin-bottom: 0.6rem;
-  display: inline-block;
-}
-
-.pageHeading {
-  margin: 0;
-  font-size: 1.9rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  line-height: 1.2;
-}
-
-/* ===== Section blocks ===== */
-.sectionCard {
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 26px 0;
-  border-bottom: 1px solid #ececf0;
-}
-
-.sectionCard:last-child {
-  border-bottom: none;
+/* ===== Section ===== */
+.section {
+  margin-bottom: 32px;
 }
 
 .sectionTitle {
-  margin: 0 0 1.2rem;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 24px;
 }
 
-/* ===== Member card grid ===== */
+/* ===== Two-column grid for multi-member sections ===== */
 .memberGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 40px;
 }
 
+/* ===== Single-column centered for solo sections ===== */
+.memberGridSingle {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== Member card — no box, just text ===== */
 .memberCard {
-  border: 1px solid #ececf0;
-  border-radius: 10px;
-  padding: 18px 20px;
-  background: #fcfcfd;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.memberCard:hover {
-  border-color: #d8cfe0;
-  box-shadow: 0 4px 14px rgba(142, 63, 150, 0.08);
+  align-items: center;
+  gap: 2px;
+  padding: 8px 0;
 }
 
 .memberName {
   margin: 0 0 2px;
-  font-size: 1rem;
+  font-size: 13px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #333;
 }
 
 .memberQualification {
   margin: 0;
-  font-size: 0.85rem;
-  color: #5b5b63;
-  line-height: 1.5;
-}
-
-.memberDesignation {
-  margin: 0;
-  font-size: 0.87rem;
-  font-weight: 600;
+  font-size: 12px;
   color: #333;
   line-height: 1.5;
 }
 
-.memberInstitution {
-  margin: 0 0 6px;
-  font-size: 0.87rem;
-  color: #4a4a4a;
-  line-height: 1.55;
+.memberField {
+  margin: 0;
+  font-size: 12px;
+  color: #333;
+  line-height: 1.5;
 }
 
-.orcidLink,
-.emailLink {
-  font-size: 0.83rem;
-  color: #8e3f96;
+.memberLink {
+  font-size: 11px;
+  color: #333;
   text-decoration: none;
-  font-weight: 600;
-  word-break: break-word;
+  word-break: break-all;
 }
 
-.orcidLink:hover,
-.emailLink:hover {
+.memberLink:hover {
   text-decoration: underline;
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 960px) {
-  .bodyLayout {
-    grid-template-columns: 1fr;
-  }
-
-  .pageContainer {
-    border-left: none;
-    padding: 24px 20px 48px;
-  }
-
+@media (max-width: 700px) {
   .memberGrid {
     grid-template-columns: 1fr;
   }

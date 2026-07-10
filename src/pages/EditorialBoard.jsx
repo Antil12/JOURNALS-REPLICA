@@ -5,17 +5,30 @@ function MemberCard({ member }) {
   return (
     <div className={styles.memberCard}>
       <p className={styles.memberName}>{member.name}</p>
-      <p className={styles.memberQualification}>{member.qualification}</p>
-      <p className={styles.memberDesignation}>{member.designation}</p>
-      <p className={styles.memberInstitution}>{member.institution}</p>
+      {member.qualification && (
+        <p className={styles.memberQualification}>{member.qualification}</p>
+      )}
+      {member.designation && (
+        <p className={styles.memberField}>{member.designation}</p>
+      )}
+      {member.institution && (
+        <p className={styles.memberField}>{member.institution}</p>
+      )}
       {member.orcid && (
-        <a className={styles.orcidLink} href={`https://orcid.org/${member.orcid}`} target="_blank" rel="noreferrer">
-          orcid.org/{member.orcid}
+        <a
+          className={styles.memberLink}
+          href={`https://orcid.org/${member.orcid}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          https://orcid.org/{member.orcid}
         </a>
       )}
-      <a className={styles.emailLink} href={`mailto:${member.email}`}>
-        {member.email}
-      </a>
+      {member.email && (
+        <a className={styles.memberLink} href={`mailto:${member.email}`}>
+          {member.email}
+        </a>
+      )}
     </div>
   )
 }
@@ -25,24 +38,20 @@ export default function EditorialBoard() {
 
   return (
     <div className={styles.pageBg}>
-      <div className={styles.bodyLayout}>
-        <div className={styles.pageContainer}>
-          <div className={styles.hero}>
-            <span className={styles.eyebrow}>{editorialBoard.eyebrow}</span>
-            <h1 className={styles.pageHeading}>{editorialBoard.heading}</h1>
-          </div>
-
-          {editorialBoard.sections.map((section) => (
-            <section key={section.title} className={styles.sectionCard}>
+      <div className={styles.pageContainer}>
+        {editorialBoard.sections.map((section) => {
+          const isSingle = section.members.length === 1
+          return (
+            <section key={section.title} className={styles.section}>
               <h2 className={styles.sectionTitle}>{section.title}</h2>
-              <div className={styles.memberGrid}>
+              <div className={isSingle ? styles.memberGridSingle : styles.memberGrid}>
                 {section.members.map((member) => (
-                  <MemberCard key={member.email} member={member} />
+                  <MemberCard key={member.email || member.name} member={member} />
                 ))}
               </div>
             </section>
-          ))}
-        </div>
+          )
+        })}
       </div>
     </div>
   )

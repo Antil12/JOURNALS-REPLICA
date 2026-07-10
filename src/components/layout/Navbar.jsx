@@ -16,23 +16,18 @@ const menu = [
     label: 'Author Zone',
     children: [
       { label: 'Author Instructions', to: '/author-instructions' },
-      // { label: 'Track Manuscript', to: '/track-manuscript' },
     ],
   },
-  { label: 'Current Issue', to: '/current-issue' },
+  { label: 'Current Issue', to: '/' },
   { label: 'All Issues', to: '/all-issues' },
   { label: 'Online First', to: '/online-first' },
   {
     label: 'Business Opportunities',
     children: [
       { label: 'Advertisement', to: '/advertisement' },
-      { label: 'Generate Online Invoice', to: '/generate-online-invoice' },
-      { label: 'Order Hard Copy', to: '/order-hard-copy' },
-      { label: 'Order Reprint', to: '/order-reprint' },
-      { label: 'Rights & Permissions', to: '/rights-permissions' },
     ],
   },
-  { label: 'Subscription', to: '/subscription' },
+  { label: 'Subscription', to: '/' },
   {
     label: 'Contact Us',
     children: [
