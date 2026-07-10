@@ -30,7 +30,20 @@ export default {
       { href: '#openaccess', label: 'Open Access Policy' },
     ],
     aims: { title: 'Aims & Scope', paragraphs: ['Site B journal details.'] },
-    ownership: { title: 'Ownership and Management', paragraphs: ['Managed by Example Publishing Group.'] },
+    ownership: {
+      title: 'Ownership and Management',
+      paragraphs: ['Managed by Example Publishing Group.'],
+      institution: {
+        title: 'About the Institution',
+        name: 'Example Institution B',
+        link: 'https://example.com/institution-b',
+        paragraphs: ['Site B partner institution information.']
+      },
+      publisher: {
+        title: 'About the Publisher',
+        paragraphs: ['Site B publisher information.']
+      }
+    },
     frequency: { title: 'Publication Frequency', paragraphs: ['Biannual.'] },
     copyright: { title: 'Copyright and Licensing', paragraphs: ['CC BY-NC terms.'] },
     openAccess: { title: 'Open Access Policy', intro: 'Open access overview.', paragraphs: ['Free access to readers.'] },

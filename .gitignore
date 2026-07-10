@@ -1,24 +1,135 @@
-# Logs
-logs
+# =========================
+# OS-generated files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# =========================
+# Logs & runtime data
+# =========================
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
 
-node_modules
-dist
-dist-ssr
-*.local
+# =========================
+# Dependency directories
+# =========================
+node_modules/
+jspm_packages/
+bower_components/
+vendor/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# =========================
+# Build output
+# =========================
+dist/
+build/
+out/
+*.egg-info/
+target/
+bin/
+obj/
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+config/secrets.yml
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+.mypy_cache/
+.pytest_cache/
+.tox/
+*.egg
+*.egg-info/
+
+# =========================
+# Java
+# =========================
+*.class
+*.jar
+*.war
+*.ear
+
+# =========================
+# Compiled / cache files
+# =========================
+*.o
+*.obj
+*.dll
+*.exe
+*.out
+*.com
+*.cache
+
+# =========================
+# Coverage / test reports
+# =========================
+coverage/
+.nyc_output/
+*.lcov
+htmlcov/
+
+# =========================
+# Package manager locks (optional - uncomment if desired)
+# =========================
+# package-lock.json
+# yarn.lock
+# Pipfile.lock
+
+# =========================
+# Archives
+# =========================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.bak
+*.orig
