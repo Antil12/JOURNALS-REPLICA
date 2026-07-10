@@ -1,34 +1,43 @@
+import { useState } from 'react'
 import styles from './OnlineFirst.module.css'
 
+// Populate this array once Online First articles exist.
+// Example shape: { id: 'a1', title: '', doi: '', href: '' }
+const onlineFirstArticles = []
+
 export default function OnlineFirst() {
+  const [showPreProduction, setShowPreProduction] = useState(true)
+
   return (
     <div className={styles.pageBg}>
-      <div className={styles.bodyLayout}>
-<div className={styles.pageContainer}>
-          <div className={styles.hero}>
-            <span className={styles.eyebrow}>Online First</span>
-            <h1 className={styles.pageHeading}>Online First</h1>
-            <p className={styles.intro}>
-              Online First articles are published ahead of print so the latest research reaches readers faster and remains accessible during production.
-            </p>
-          </div>
+      <div className={styles.pageContainer}>
+        <div className={styles.toggleRow}>
+          <h2 className={styles.sideHeading}>Pre-Production</h2>
 
-          <section className={styles.sectionCard}>
-            <h2 className={styles.sectionTitle}>Benefits of Online First</h2>
-            <ul className={styles.bulletList}>
-              <li>Faster publication for time-sensitive science.</li>
-              <li>Immediate DOI-based citation and indexing readiness.</li>
-              <li>Earlier access to findings important to clinicians and educators.</li>
-            </ul>
-          </section>
+          <button
+            type="button"
+            role="switch"
+            aria-checked={showPreProduction}
+            className={`${styles.toggle} ${showPreProduction ? styles.toggleOn : ''}`}
+            onClick={() => setShowPreProduction((prev) => !prev)}
+          >
+            <span className={styles.toggleKnob} />
+          </button>
 
-          <section className={styles.sectionCard}>
-            <h2 className={styles.sectionTitle}>Reader Experience</h2>
-            <p>
-              Online First content improves access for readers who rely on prompt publication of emerging findings and educational updates.
-            </p>
-          </section>
+          <h2 className={styles.sideHeading}>Online First</h2>
         </div>
+
+        <hr className={styles.divider} />
+
+        {onlineFirstArticles.length > 0 && (
+          <div className={styles.articlesList}>
+            {onlineFirstArticles.map((article) => (
+              <a key={article.id} href={article.href} className={styles.articleRow}>
+                {article.title}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

@@ -1,33 +1,39 @@
-/* ===== Page shell (EditorialBoard style) ===== */
+/* ===== Page shell ===== */
 .pageBg {
-  min-height: 100vh;
-  background: #f7f7f9;
+  background: #fafbfc;
   color: #1f2429;
+  padding: 32px 22px 48px;
 }
 
 .bodyLayout {
-  display: flex;
-  flex-direction: column;
-  max-width: 1180px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 28px 20px;
 }
 
 .pageContainer {
   display: flex;
   flex-direction: column;
   gap: 0;
-  background: #ffffff;
-  padding: 28px 40px 60px;
-  border-left: 1px solid #e5e2ea;
-  min-height: 100vh;
+  padding: 0 24px;
+  padding-left: 110px;
+}
+
+@media (max-width: 1199px) {
+  .pageContainer {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pageContainer {
+    padding-left: 24px;
+  }
 }
 
 /* ===== Hero ===== */
 .hero {
-  padding-bottom: 18px;
-  margin-bottom: 6px;
-  border-bottom: 1px solid #ece8f2;
+  padding-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .eyebrow {
@@ -36,102 +42,99 @@
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
   display: inline-block;
 }
 
 .pageHeading {
   margin: 0;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #18181b;
   line-height: 1.2;
 }
 
-/* ===== Quick links (keep JournalInformation specifics) ===== */
+.divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 16px 0 20px;
+}
+
+/* ===== Quick links ===== */
 .quickLinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px 24px;
+  gap: 4px 24px;
   list-style: none;
-  margin: 20px 0 20px;
-  padding: 20px 22px;
-  border: 1px solid #eee9f4;
-  border-radius: 12px;
-  background: #faf7fc;
-  max-width: 980px;
+  margin: 0 0 28px;
+  padding: 0;
 }
 
 .quickLinks li {
   position: relative;
-  padding-left: 14px;
+  padding-left: 18px;
   line-height: 1.9;
 }
 
 .quickLinks li::before {
-  content: "▸";
+  content: "•";
   position: absolute;
   left: 0;
-  color: #8e3f96;
-  font-size: 0.85rem;
+  color: #1f2429;
+  font-size: 1rem;
   top: 0;
 }
 
 .quickLinks .subItem {
-  padding-left: 28px;
-  font-size: 0.93rem;
+  padding-left: 32px;
+  font-size: 0.95rem;
 }
 
 .quickLinks .subItem::before {
-  content: "◦";
-  left: 12px;
-  font-size: 0.72rem;
-  top: 2px;
+  content: "○";
+  left: 18px;
+  font-size: 0.7rem;
+  top: 3px;
 }
 
 .quickLinks a {
   color: #8e3f96;
   font-weight: 700;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 }
 
 .quickLinks a:hover {
   text-decoration: underline;
 }
 
-/* ===== Section blocks (kept from JournalInformation) ===== */
+/* ===== Section blocks ===== */
 .sectionCard {
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 24px 0 26px;
-  border-bottom: 1px solid #ececf0;
-  scroll-margin-top: 24px;
+  padding: 0 0 22px;
 }
 
 .sectionCard:last-child {
-  border-bottom: none;
   padding-bottom: 0;
 }
 
 .sectionTitle {
-  margin: 0 0 0.9rem;
-  font-size: 1.25rem;
+  margin: 0 0 0.8rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #1f2937;
 }
 
 .subTitle {
-  margin: 1.25rem 0 0.7rem;
-  font-size: 1.02rem;
+  margin: 1.1rem 0 0.5rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #1f2937;
 }
 
 .orgName {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: #111827;
 }
 
 .orgName a {
@@ -152,10 +155,10 @@
 
 .sectionCard p {
   margin: 0 0 1rem;
-  color: #374151;
-  line-height: 1.8;
-  font-size: 0.97rem;
-  max-width: 980px;
+  color: #1f2429;
+  line-height: 1.75;
+  font-size: 0.98rem;
+  max-width: 1200px;
 }
 
 .sectionCard p strong {
@@ -168,7 +171,7 @@
 }
 
 .sectionCard a {
-  color: #8e3f96;
+  color: #2563eb;
   text-decoration: none;
   font-weight: 600;
 }
@@ -181,14 +184,14 @@
 .numberedList {
   margin: 0 0 1.1rem;
   padding-left: 1.4rem;
-  color: #374151;
-  max-width: 980px;
+  color: #1f2429;
+  max-width: 1200px;
 }
 
 .numberedList li {
-  margin-bottom: 0.7rem;
-  line-height: 1.75;
-  font-size: 0.96rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+  font-size: 0.97rem;
 }
 
 .numberedList li:last-child {
@@ -201,17 +204,7 @@
     padding: 18px 12px 36px;
   }
 
-  .bodyLayout {
-    flex-direction: column;
-  }
-
-  .pageContainer {
-    padding: 24px 20px 44px;
-    border-left: none;
-  }
-
   .quickLinks {
-    display: block;
-    padding: 0;
+    grid-template-columns: 1fr;
   }
 }

@@ -1,12 +1,15 @@
+import logoImage from '../../assets/Jaypee-Logo.png'
+import coverImage from '../../assets/hero.png'
+
 export default {
   siteName: 'Site C Journal',
   shortName: 'SCJ',
   siteCode: 'SCJ',
   journalCode: 'SCJ',
-  logo: './assets/site-logo.svg',
-  favicon: './assets/site-favicon.svg',
-  coverImage: './assets/site-cover.svg',
-  heroImage: './assets/site-cover.svg',
+  logo: logoImage,
+  favicon: logoImage,
+  coverImage,
+  heroImage: coverImage,
   email: 'editor@sitec.example',
   phone: '+1-555-0200',
   address: '200 Example Avenue, Suite 300, Example City, EX 00000.',
@@ -24,5 +27,5 @@ export default {
   registerUrl: 'https://example.com/register',
   loginUrl: 'https://example.com/login',
   publisherName: 'Example Publishing Group',
-  logoImages: ['./assets/site-logo.svg', './assets/site-logo.svg', './assets/site-logo.svg'],
+  logoImages: [logoImage, logoImage, logoImage],
 }

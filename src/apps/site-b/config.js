@@ -1,12 +1,15 @@
+import logoImage from '../../assets/jaypee-AACS-2.png'
+import coverImage from '../../assets/hero.png'
+
 export default {
   siteName: 'Site B Journal',
   shortName: 'SBJ',
   siteCode: 'SBJ',
   journalCode: 'SBJ',
-  logo: './assets/site-logo.svg',
-  favicon: './assets/site-favicon.svg',
-  coverImage: './assets/site-cover.svg',
-  heroImage: './assets/site-cover.svg',
+  logo: logoImage,
+  favicon: logoImage,
+  coverImage,
+  heroImage: coverImage,
   email: 'editor@siteb.example',
   phone: '+1-555-0100',
   address: '100 Example Street, Suite 200, Example City, EX 00000.',
@@ -24,5 +27,5 @@ export default {
   registerUrl: 'https://example.com/register',
   loginUrl: 'https://example.com/login',
   publisherName: 'Example Publishing Group',
-  logoImages: ['./assets/site-logo.svg', './assets/site-logo.svg', './assets/site-logo.svg'],
+  logoImages: [logoImage, logoImage, logoImage],
 }

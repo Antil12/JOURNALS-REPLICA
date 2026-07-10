@@ -1,12 +1,17 @@
+import logoImage from '../../assets/jaypee-AACS-1.png'
+import logoImage2 from '../../assets/jaypee-AACS-2.png'
+import logoImage3 from '../../assets/jaypee-AACS-3.png'
+import coverImage from '../../assets/jaypee-AACS.jpg'
+
 export default {
   siteName: 'Advances in Anatomy and Clinical Sciences',
   shortName: 'AACS',
   siteCode: 'AACS',
   journalCode: 'AACS',
-  logo: './assets/site-logo.svg',
-  favicon: './assets/site-favicon.svg',
-  coverImage: './assets/site-cover.svg',
-  heroImage: './assets/site-cover.svg',
+  logo: logoImage,
+  favicon: logoImage,
+  coverImage,
+  heroImage: coverImage,
   email: 'editor@aacsj.com',
   phone: '+91-11-43574357',
   address: '4838/24, Ansari Road, Daryaganj, New Delhi 110 002, India.',
@@ -24,5 +29,5 @@ export default {
   registerUrl: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=AACS&register=1',
   loginUrl: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=AACS',
   publisherName: 'Jaypee Brothers Medical Publishers Pvt. Ltd.',
-  logoImages: ['./assets/site-logo.svg', './assets/site-logo.svg', './assets/site-logo.svg'],
+  logoImages: [logoImage, logoImage2, logoImage3],
 }
