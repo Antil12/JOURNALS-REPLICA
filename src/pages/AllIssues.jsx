@@ -1,9 +1,9 @@
+import siteContent from '../config/siteContent'
 import styles from './AllIssues.module.css'
-import siteContent from '../apps/site-a/content'
-import siteContent1 from '../apps/site-b/content'
 
 export default function AllIssues() {
-  const { journalName, issues } = siteContent.allIssues
+  const allIssues = siteContent.allIssues || { journalName: '', issues: [] }
+  const { journalName, issues } = allIssues
 
   return (
     <div className={styles.pageBg}>

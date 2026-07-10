@@ -1,5 +1,5 @@
 import paperImage from '../assets/paper.png'
-import siteContent from '../apps/site-a/content'
+import siteContent from '../config/siteContent'
 import styles from './Advertisement.module.css'
 
 const imageMap = {
@@ -8,8 +8,39 @@ const imageMap = {
 
 export default function Advertisement() {
   const { advertisement } = siteContent
+  const hasDetailedLayout = Boolean(advertisement?.technicalDetails && advertisement?.intro?.label)
+  const diagramSrc = hasDetailedLayout ? imageMap[advertisement.technicalDetails.diagram.imageKey] : null
+
+  if (!hasDetailedLayout) {
+    return (
+      <div className={styles.pageBg}>
+        <div className={styles.pageContainer}>
+          <h1 className={styles.pageHeading}>{advertisement.heading || advertisement.title}</h1>
+          <hr className={styles.divider} />
+
+          {advertisement.intro ? <p>{advertisement.intro}</p> : null}
+
+          {advertisement.sections?.map((section) => (
+            <div key={section.title} className={styles.textSection}>
+              <h3 className={styles.sectionTitle}>{section.title}</h3>
+              {section.paragraphs?.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+              {section.bullets?.length ? (
+                <ul className={styles.bulletList}>
+                  {section.bullets.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
   const { intro, technicalDetails, schedule, paymentDetails } = advertisement
-  const diagramSrc = imageMap[technicalDetails.diagram.imageKey]
 
   return (
     <div className={styles.pageBg}>
