@@ -277,3 +277,29 @@
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+
+/* Hamburger button — hidden on desktop, shown on mobile */
+.mobileHamburger {
+  display: none;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  padding: 4px 9px;
+  cursor: pointer;
+  margin-left: 12px;
+  line-height: 1;
+}
+
+.mobileHamburger:focus {
+  outline: none;
+}
+
+@media (max-width: 991px) {
+  .mobileHamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

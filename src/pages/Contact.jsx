@@ -1,65 +1,59 @@
 import styles from './contact.module.css'
+import siteContent from '../config/siteContent'
 
 export default function Contact() {
+  const { contact } = siteContent
+
+  function renderLine(line) {
+    if (line.startsWith('Email:')) {
+      const emailText = line.substring(6).trim();
+      const parts = emailText.split('/').map(p => p.trim());
+      return (
+        <>
+          Email: {parts.map((email, idx) => (
+            <span key={email}>
+              <a href={`mailto:${email}`}>{email}</a>
+              {idx < parts.length - 1 ? ' / ' : ''}
+            </span>
+          ))}
+        </>
+      );
+    }
+    if (line.startsWith('Website:')) {
+      const webText = line.substring(8).trim();
+      const href = webText.startsWith('http') ? webText : `https://${webText}`;
+      return (
+        <>
+          Website: <a href={href} target="_blank" rel="noreferrer">{webText}</a>
+        </>
+      );
+    }
+    return line;
+  }
+
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-<div className={styles.pageContainer}>
+        <div className={styles.pageContainer}>
           <div className={styles.hero}>
-            <span className={styles.eyebrow}>AACS JOURNAL REPLICA</span>
-            <h1 className={styles.pageHeading}>Contact Us</h1>
-            <p className={styles.intro}>
-              The journal’s publisher offers direct channels for editorial, subscription,
-              indexing, and publishing support questions.
-            </p>
+            <h1 className={styles.pageHeading}>{contact.heading}</h1>
           </div>
 
-          <section className={styles.sectionCard}>
-            <h2 className={styles.sectionTitle}>Publisher's Corporate Office</h2>
-            <div className={styles.sectionBody}>
-              <p>
-                Jaypee Brothers Medical Publishers Pvt. Ltd.
-                <br />4838/24, Ansari Road, Daryaganj, New Delhi 110 002, India.
-              </p>
-              <p>
-                Phone: +91-11-43574357<br />Fax: +91-11-43574314
-              </p>
-              <p>
-                Email: <strong>editor@jaypeebrothers.com</strong> / <strong>journals.editor@jaypeebrothers.com</strong>
-              </p>
-              <p>
-                Website: <a href="https://www.jaypeejournals.com">www.jaypeejournals.com</a>
-              </p>
-            </div>
-          </section>
-
-          <section className={styles.sectionCard}>
-            <h2 className={styles.sectionTitle}>Registered Office</h2>
-            <div className={styles.sectionBody}>
-              <p>
-                Jaypee Brothers Medical Publishers Pvt. Ltd.
-                <br />23/23-B, Ansari Road, Daryaganj, New Delhi 110 002, India.
-              </p>
-              <p>
-                Phone: +91-11-23272143, +91-11-23272703, +91-11-23282021, +91-11-23245672
-              </p>
-              <p>
-                Email: <strong>jaypee@jaypeebrothers.com</strong>
-              </p>
-              <p>
-                Website: <a href="https://jaypeebrothers.com">https://jaypeebrothers.com</a>
-              </p>
-            </div>
-          </section>
-
-          <section className={styles.sectionCard}>
-            <h2 className={styles.sectionTitle}>For ISSN and RNI Query</h2>
-            <div className={styles.sectionBody}>
-              <p>
-                Nikita Pal<br />110002, India<br />Phone: +91-11-43574357
-              </p>
-            </div>
-          </section>
+          {contact.sections.map((section, sIdx) => (
+            <section key={sIdx} className={styles.sectionCard}>
+              <h2 className={styles.sectionTitle}>{section.title}</h2>
+              {section.subtitle && (
+                <h3 className={styles.sectionSubtitle}>{section.subtitle}</h3>
+              )}
+              <div className={styles.sectionBody}>
+                {section.lines.map((line, lIdx) => (
+                  <p key={lIdx}>
+                    {renderLine(line)}
+                  </p>
+                ))}
+              </div>
+            </section>
+          ))}
         </div>
       </div>
     </div>

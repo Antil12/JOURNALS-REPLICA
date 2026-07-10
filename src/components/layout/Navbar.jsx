@@ -19,7 +19,7 @@ const menu = [
       // { label: 'Track Manuscript', to: '/track-manuscript' },
     ],
   },
-  { label: 'Current Issue', to: '/' },
+  { label: 'Current Issue', to: '/current-issue' },
   { label: 'All Issues', to: '/all-issues' },
   { label: 'Online First', to: '/online-first' },
   {
@@ -42,9 +42,8 @@ const menu = [
   },
 ]
 
-export default function Navbar() {
+export default function Navbar({ mobileOpen, onClose }) {
   const [openDropdown, setOpenDropdown] = useState(null)
-  const [mobileOpen, setMobileOpen] = useState(false)
   const navRef = useRef(null)
 
   useEffect(() => {
@@ -53,7 +52,6 @@ export default function Navbar() {
         setOpenDropdown(null)
       }
     }
-
     document.addEventListener('click', onDocumentClick)
     return () => document.removeEventListener('click', onDocumentClick)
   }, [])
@@ -63,12 +61,16 @@ export default function Navbar() {
   }
 
   return (
-    <header id={styles.header}>
+    <header id={styles.header} ref={navRef}>
       <div className={styles.container}>
         <div className={styles.row}>
           <div className={styles.colLg12}>
             <nav className={styles.navbar}>
-              <div className={styles.navbarCollapse} id="navbarNav">
+              {/* navbarCollapse is hidden on mobile unless mobileOpen is true */}
+              <div
+                className={`${styles.navbarCollapse} ${mobileOpen ? styles.showCollapse : ''}`}
+                id="navbarNav"
+              >
                 <ul className={styles.navbarNav}>
                   {menu.map((item) => {
                     const hasChildren = Array.isArray(item.children)
@@ -82,8 +84,12 @@ export default function Navbar() {
                         onMouseLeave={() => hasChildren && setOpenDropdown(null)}
                       >
                         {item.to ? (
-                          <Link className={`${styles.navLink} ${item.active ? styles.active : ''}`} to={item.to}>
-                            {item.label} {item.active && <span className={styles.srOnly}>(current)</span>}
+                          <Link
+                            className={`${styles.navLink} ${item.active ? styles.active : ''}`}
+                            to={item.to}
+                            onClick={onClose}
+                          >
+                            {item.label}{item.active && <span className={styles.srOnly}>(current)</span>}
                           </Link>
                         ) : (
                           <>
@@ -91,7 +97,7 @@ export default function Navbar() {
                               className={styles.navLink}
                               role="button"
                               aria-haspopup="true"
-                              aria-expanded="false"
+                              aria-expanded={isOpen ? 'true' : 'false'}
                               href="#"
                               onClick={(e) => {
                                 e.preventDefault()
@@ -101,13 +107,16 @@ export default function Navbar() {
                               <span className={styles.dropdownToggle}>{item.label}</span>
                             </a>
                             {hasChildren && (
-                              <div className={`${styles.dropdownMenu} ${isOpen ? styles.show : ''}`} aria-labelledby="navbarDropdownMenuLink">
+                              <div
+                                className={`${styles.dropdownMenu} ${isOpen ? styles.show : ''}`}
+                                aria-labelledby="navbarDropdownMenuLink"
+                              >
                                 {item.children.map((child) => (
                                   <Link
                                     key={child.to}
                                     to={child.to}
                                     className={styles.dropdownItem}
-                                    onClick={() => setOpenDropdown(null)}
+                                    onClick={() => { setOpenDropdown(null); onClose() }}
                                   >
                                     {child.label}
                                   </Link>

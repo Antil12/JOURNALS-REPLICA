@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import TopBar from './components/layout/TopBar'
 import Navbar from './components/layout/Navbar'
@@ -23,12 +24,14 @@ import GrievanceRedressal from './pages/GrievanceRedressal'
 import './index.css'
 
 function App() {
+  const [mobileOpen, setMobileOpen] = useState(false)
+
   return (
     <BrowserRouter>
       <div className="appShell">
         <header className="siteHeader">
-          <TopBar />
-          <Navbar />
+          <TopBar mobileOpen={mobileOpen} onToggle={() => setMobileOpen(o => !o)} />
+          <Navbar mobileOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
         </header>
         <main>
           <Routes>

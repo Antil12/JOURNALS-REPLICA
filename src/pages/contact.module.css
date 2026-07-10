@@ -1,85 +1,82 @@
-/* Styles crafted to mirror the AACS Contact page layout and typography */
 .pageBg {
   min-height: 100vh;
-  background: linear-gradient(180deg, #fbfdff 0%, #eef6ff 100%);
-  color: #111827;
-  padding-bottom: 4rem;
+  background: #ffffff;
+  color: #333333;
+  padding-bottom: 5rem;
+  font-family: sans-serif !important;
 }
 
 .bodyLayout {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 32px;
-  max-width: 1400px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 28px 20px;
+  padding: 40px 15px;
 }
 
 .pageContainer {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  align-items: center;
+  width: 100%;
 }
 
 .hero {
-  background: transparent;
-  padding: 0;
-}
-
-.eyebrow {
-  display: inline-block;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: #6b21a8;
-  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 45px;
 }
 
 .pageHeading {
-  margin: 0 0 0.6rem 0;
-  font-size: 2.25rem;
-  text-align: center;
+  font-size: 28px;
   font-weight: 700;
-  color: #111827;
-}
-
-.intro {
-  max-width: 680px;
-  margin: 0 auto 1.2rem auto;
-  text-align: left;
-  color: #374151;
+  color: #333333;
+  margin: 0 0 15px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
 }
 
 .sectionCard {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 22px;
-  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
-  margin-bottom: 14px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .sectionTitle {
-  margin: 0 0 0.6rem;
-  font-size: 1.15rem;
-  color: #0f172a;
+  font-size: 20px;
   font-weight: 700;
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+
+.sectionSubtitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+
+.sectionBody {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.6;
 }
 
 .sectionBody p {
-  margin: 0 0 0.8rem;
-  line-height: 1.75;
-  color: #4b5563;
+  margin: 0 0 6px 0;
 }
 
-/* Make the publisher blocks centered and wider like the reference */
-.pageContainer > .sectionCard:first-of-type {
-  padding-top: 14px;
+.sectionBody p:last-child {
+  margin-bottom: 0;
 }
 
-@media (max-width: 960px) {
-  .bodyLayout {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .pageHeading { text-align: left; }
-  .intro { margin-left: 0; }
+.sectionBody a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.sectionBody a:hover {
+  text-decoration: none;
 }

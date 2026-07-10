@@ -202,39 +202,61 @@ export default {
     ],
   },
   contact: {
-    eyebrow: 'AACS JOURNAL REPLICA',
+    eyebrow: 'Contact Us',
     heading: 'Contact Us',
-    intro: 'The journal’s publisher offers direct channels for editorial, subscription, indexing, and publishing support questions.',
     sections: [
       {
-        title: 'Publisher\'s Corporate Office',
+        title: "Publisher's Corporate Office",
+        subtitle: "Corporate Office",
         lines: [
-          'Jaypee Brothers Medical Publishers Pvt. Ltd.',
-          '4838/24, Ansari Road, Daryaganj, New Delhi 110 002, India.',
-          'Phone: +91-11-43574357',
-          'Fax: +91-11-43574314',
-          'Email: editor@jaypeebrothers.com / journals.editor@jaypeebrothers.com',
-          'Website: https://www.jaypeejournals.com',
-        ],
+          "Jaypee Brothers Medical Publishers Pvt. Ltd.",
+          "4838/24, Ansari Road, Daryaganj, New Delhi 110 002, India 110002, India",
+          "Phone: +91-11-43574357",
+          "Fax: +91-11-43574314",
+          "Email: editor@jaypeebrothers.com / journals.editor@jaypeebrothers.com",
+          "Website: www.jaypeejournals.com"
+        ]
       },
       {
-        title: 'Registered Office',
+        title: "Registered Office",
         lines: [
-          'Jaypee Brothers Medical Publishers Pvt. Ltd.',
-          '23/23-B, Ansari Road, Daryaganj, New Delhi 110 002, India.',
-          'Phone: +91-11-23272143, +91-11-23272703, +91-11-23282021, +91-11-23245672',
-          'Email: jaypee@jaypeebrothers.com',
-          'Website: https://jaypeebrothers.com',
-        ],
+          "Jaypee Brothers Medical Publishers Pvt. Ltd.",
+          "23/23-B, Ansari Road, Daryaganj, New Delhi 110 002, India",
+          "Phone: +91-11-23272143, +91-11-23272703, +91-11-23282021, +91-11-23245672",
+          "Email: jaypee@jaypeebrothers.com",
+          "Website: https://jaypeebrothers.com"
+        ]
       },
       {
-        title: 'For ISSN and RNI Query',
+        title: "For ISSN and RNI Query",
         lines: [
-          'Nikita Pal',
-          '110002, India',
-          'Phone: +91-11-43574357',
-        ],
+          "Nikita Pal",
+          "110002, India",
+          "Phone: +91-11-43574357",
+          "Email: nikita@jaypeebrothers.com"
+        ]
       },
+      {
+        title: "For Indexing",
+        lines: [
+          "Awani Mishra",
+          "110002, India",
+          "Phone: +91-11-43574357 | Ex-5117",
+          "Email: info.indexing@jaypeejournals.com"
+        ]
+      },
+      {
+        title: "Overseas Offices",
+        subtitle: "UK Office",
+        lines: [
+          "JP Medical Ltd.",
+          "83 Victoria Street, London SW1H 0HW (UK) , London",
+          "Phone: +44-(0)2031708910",
+          "Fax: +02-03-0086180",
+          "Email: info@jpmedpub.com",
+          "Website: www.jpmedpub.com"
+        ]
+      }
     ],
   },
   subscription: {
@@ -560,4 +582,18 @@ export default {
       },
     ],
   },
+  grievanceRedressal: {
+    eyebrow: 'Contact Us',
+    heading: 'Grievance Redressal',
+    sections: [
+      {
+        title: 'General Queries:',
+        email: 'complaint.journals@jaypeebrothers.com'
+      },
+      {
+        title: 'Technical Queries:',
+        email: 'complaint.tech@jaypeebrothers.com'
+      }
+    ]
+  }
 }

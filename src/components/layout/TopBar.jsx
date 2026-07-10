@@ -1,7 +1,7 @@
 import styles from './TopBar.module.css'
 import siteConfig from '../../config/siteConfig'
 
-export default function TopBar() {
+export default function TopBar({ mobileOpen, onToggle }) {
   return (
     <>
       <div className={styles.fixedTop}>
@@ -47,6 +47,15 @@ export default function TopBar() {
                             >
                               <span><i className="fa fa-lock"></i> Login</span>
                             </a>
+                            {/* Hamburger — only visible on mobile */}
+                            <button
+                              className={styles.mobileHamburger}
+                              type="button"
+                              aria-label="Toggle navigation"
+                              onClick={onToggle}
+                            >
+                              <i className={`fa ${mobileOpen ? 'fa-times' : 'fa-bars'}`} aria-hidden="true"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
