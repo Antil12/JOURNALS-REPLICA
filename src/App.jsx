@@ -9,7 +9,7 @@ import JournalInformation from './pages/JournalInformation'
 import EditorialBoard from './pages/EditorialBoard'
 import Policy from './pages/Policy'
 import AuthorInstructions from './pages/AuthorInstructions'
-import TrackManuscript from './pages/TrackManuscript'
+// import TrackManuscript from './pages/TrackManuscript'
 import CurrentIssue from './pages/CurrentIssue'
 import AllIssues from './pages/AllIssues'
 import OnlineFirst from './pages/OnlineFirst'
@@ -37,7 +37,7 @@ function App() {
             <Route path="/editorial-board" element={<EditorialBoard />} />
             <Route path="/policy" element={<Policy />} />
             <Route path="/author-instructions" element={<AuthorInstructions />} />
-            <Route path="/track-manuscript" element={<TrackManuscript />} />
+            {/* <Route path="/track-manuscript" element={<TrackManuscript />} /> */}
             <Route path="/current-issue" element={<CurrentIssue />} />
             <Route path="/all-issues" element={<AllIssues />} />
             <Route path="/online-first" element={<OnlineFirst />} />

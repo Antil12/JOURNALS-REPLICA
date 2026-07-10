@@ -16,10 +16,10 @@ const menu = [
     label: 'Author Zone',
     children: [
       { label: 'Author Instructions', to: '/author-instructions' },
-      { label: 'Track Manuscript', to: '/track-manuscript' },
+      // { label: 'Track Manuscript', to: '/track-manuscript' },
     ],
   },
-  { label: 'Current Issue', to: '/current-issue' },
+  { label: 'Current Issue', to: '/' },
   { label: 'All Issues', to: '/all-issues' },
   { label: 'Online First', to: '/online-first' },
   {

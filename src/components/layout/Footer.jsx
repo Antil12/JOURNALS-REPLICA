@@ -24,7 +24,7 @@ export default function Footer() {
           <ul className={styles.bannerMenuW3layouts}>
             <li><a href="/">Home</a></li>
             <li><a href="/journal-information">About Journal</a></li>
-            <li><a href="/current-issue">Current Issue</a></li>
+            <li><a href="/">Current Issue</a></li>
             <li><a href="/all-issues"><span>All Issues</span></a></li>
             <li><a href="/contact-us">Contact</a></li>
             <li><a href="/policy">Policy</a></li>

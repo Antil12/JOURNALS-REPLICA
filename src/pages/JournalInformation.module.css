@@ -1,16 +1,14 @@
-/* ===== Page shell ===== */
+/* ===== Page shell (EditorialBoard style) ===== */
 .pageBg {
   min-height: 100vh;
-  background: linear-gradient(180deg, #f5f4f8 0%, #efeff3 100%);
+  background: #f7f7f9;
   color: #1f2429;
-  padding: 28px 18px 48px;
 }
 
 .bodyLayout {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 32px;
-  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 28px 20px;
 }
@@ -20,10 +18,8 @@
   flex-direction: column;
   gap: 0;
   background: #ffffff;
-  padding: 34px 40px 56px;
-  border: 1px solid #e8e4ef;
-  border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(17, 24, 39, 0.05);
+  padding: 28px 40px 60px;
+  border-left: 1px solid #e5e2ea;
   min-height: 100vh;
 }
 
@@ -52,7 +48,7 @@
   line-height: 1.2;
 }
 
-/* ===== Quick links ===== */
+/* ===== Quick links (keep JournalInformation specifics) ===== */
 .quickLinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -63,6 +59,7 @@
   border: 1px solid #eee9f4;
   border-radius: 12px;
   background: #faf7fc;
+  max-width: 980px;
 }
 
 .quickLinks li {
@@ -103,7 +100,7 @@
   text-decoration: underline;
 }
 
-/* ===== Section blocks ===== */
+/* ===== Section blocks (kept from JournalInformation) ===== */
 .sectionCard {
   background: transparent;
   border: none;
@@ -205,16 +202,16 @@
   }
 
   .bodyLayout {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    flex-direction: column;
   }
 
   .pageContainer {
     padding: 24px 20px 44px;
+    border-left: none;
   }
 
   .quickLinks {
-    grid-template-columns: 1fr;
-    padding: 16px 18px;
+    display: block;
+    padding: 0;
   }
 }
