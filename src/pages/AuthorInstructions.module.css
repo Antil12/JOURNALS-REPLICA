@@ -7,10 +7,11 @@
 
 .bodyLayout {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 28px;
-  max-width: 1180px;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 28px 20px;
 }
 
 .pageContainer {
@@ -79,5 +80,8 @@
 }
 
 @media (max-width: 960px) {
-  .bodyLayout { grid-template-columns: 1fr; }
+  .bodyLayout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

@@ -63,65 +63,68 @@ export default function Navbar() {
   }
 
   return (
-    <div className={styles.navbar} ref={navRef}>
-      <div className={styles.navInner}>
-        <button
-          type="button"
-          className={styles.mobileToggle}
-          onClick={() => setMobileOpen((current) => !current)}
-          aria-label="Toggle navigation"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+    <header id={styles.header}>
+      <div className={styles.container}>
+        <div className={styles.row}>
+          <div className={styles.colLg12}>
+            <nav className={styles.navbar}>
+              <div className={styles.navbarCollapse} id="navbarNav">
+                <ul className={styles.navbarNav}>
+                  {menu.map((item) => {
+                    const hasChildren = Array.isArray(item.children)
+                    const isOpen = openDropdown === item.label
 
-        <ul className={`${styles.menu} ${mobileOpen ? styles.open : ''}`}>
-          {menu.map((item) => {
-            const hasChildren = Array.isArray(item.children)
-            const isOpen = openDropdown === item.label
-
-            return (
-              <li
-                key={item.label}
-                className={`${styles.menuItem} ${hasChildren && isOpen ? styles.open : ''}`}
-                onMouseEnter={() => hasChildren && setOpenDropdown(item.label)}
-                onMouseLeave={() => hasChildren && setOpenDropdown(null)}
-              >
-                {item.to ? (
-                  <Link className={`${styles.menuLink} ${item.active ? styles.active : ''}`} to={item.to}>
-                    {item.label}
-                  </Link>
-                ) : (
-                  <button
-                    type="button"
-                    className={styles.menuButton}
-                    onClick={() => toggleDropdown(item.label)}
-                  >
-                    <span>{item.label}</span>
-                    <span className={styles.caret}>▾</span>
-                  </button>
-                )}
-
-                {hasChildren && (
-                  <div className={styles.dropdown}>
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.to}
-                        to={child.to}
-                        className={styles.dropdownItem}
-                        onClick={() => setOpenDropdown(null)}
+                    return (
+                      <li
+                        key={item.label}
+                        className={`${styles.navItem} ${hasChildren ? styles.dropdown : ''}`}
+                        onMouseEnter={() => hasChildren && setOpenDropdown(item.label)}
+                        onMouseLeave={() => hasChildren && setOpenDropdown(null)}
                       >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </li>
-            )
-          })}
-        </ul>
+                        {item.to ? (
+                          <Link className={`${styles.navLink} ${item.active ? styles.active : ''}`} to={item.to}>
+                            {item.label} {item.active && <span className={styles.srOnly}>(current)</span>}
+                          </Link>
+                        ) : (
+                          <>
+                            <a
+                              className={styles.navLink}
+                              role="button"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                              href="#"
+                              onClick={(e) => {
+                                e.preventDefault()
+                                toggleDropdown(item.label)
+                              }}
+                            >
+                              <span className={styles.dropdownToggle}>{item.label}</span>
+                            </a>
+                            {hasChildren && (
+                              <div className={`${styles.dropdownMenu} ${isOpen ? styles.show : ''}`} aria-labelledby="navbarDropdownMenuLink">
+                                {item.children.map((child) => (
+                                  <Link
+                                    key={child.to}
+                                    to={child.to}
+                                    className={styles.dropdownItem}
+                                    onClick={() => setOpenDropdown(null)}
+                                  >
+                                    {child.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                          </>
+                        )}
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
   )
 }

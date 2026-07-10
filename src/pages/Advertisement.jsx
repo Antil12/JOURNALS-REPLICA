@@ -1,12 +1,10 @@
-import Sidebar from '../components/layout/Sidebar'
 import styles from './Advertisement.module.css'
 
 export default function Advertisement() {
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-        <Sidebar />
-        <div className={styles.pageContainer}>
+<div className={styles.pageContainer}>
           <div className={styles.hero}>
             <span className={styles.eyebrow}>Business Opportunities</span>
             <h1 className={styles.pageHeading}>Advertisement</h1>

@@ -26,7 +26,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="appShell">
-        <header>
+        <header className="siteHeader">
           <TopBar />
           <Navbar />
         </header>

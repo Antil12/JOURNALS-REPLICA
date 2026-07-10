@@ -1,86 +1,151 @@
+/* ===== Page shell ===== */
 .pageBg {
   min-height: 100vh;
-  background: radial-gradient(circle at top left, #f5f3ff 0%, #eef2ff 70%);
-  color: #0f172a;
-  padding: 34px 24px 48px;
+  background: #f7f7f9;
+  color: #1f2429;
 }
 
 .bodyLayout {
-  display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 28px;
-  max-width: 1160px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1180px;
   margin: 0 auto;
+  padding: 28px 20px;
 }
 
 .pageContainer {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 0;
+  background: #ffffff;
+  padding: 28px 40px 60px;
+  border-left: 1px solid #e5e2ea;
+  min-height: 100vh;
 }
 
+/* ===== Hero ===== */
 .hero {
-  background: #fff;
-  border-radius: 18px;
-  padding: 30px 32px;
-  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+  padding-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 .eyebrow {
-  color: #6d28d9;
-  font-size: 0.8rem;
+  color: #8e3f96;
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.6rem;
   display: inline-block;
 }
 
 .pageHeading {
-  margin: 0 0 1rem;
-  font-size: clamp(2rem, 3vw, 2.4rem);
-}
-
-.intro {
   margin: 0;
-  color: #475569;
-  line-height: 1.82;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.2;
 }
 
+/* ===== Section blocks ===== */
 .sectionCard {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 24px 26px;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 26px 0;
+  border-bottom: 1px solid #ececf0;
+}
+
+.sectionCard:last-child {
+  border-bottom: none;
 }
 
 .sectionTitle {
-  margin: 0 0 0.8rem;
-  font-size: 1.1rem;
-  color: #111827;
+  margin: 0 0 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
-.sectionCard p {
-  margin: 0 0 1rem;
-  color: #4b5563;
-  line-height: 1.8;
-}
-
-.bulletList {
-  padding-left: 1.2rem;
-  margin: 0;
+/* ===== Member card grid ===== */
+.memberGrid {
   display: grid;
-  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
 }
 
-.bulletList li {
-  list-style: disc;
-  color: #475569;
-  line-height: 1.7;
+.memberCard {
+  border: 1px solid #ececf0;
+  border-radius: 10px;
+  padding: 18px 20px;
+  background: #fcfcfd;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
+.memberCard:hover {
+  border-color: #d8cfe0;
+  box-shadow: 0 4px 14px rgba(142, 63, 150, 0.08);
+}
+
+.memberName {
+  margin: 0 0 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.memberQualification {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #5b5b63;
+  line-height: 1.5;
+}
+
+.memberDesignation {
+  margin: 0;
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.5;
+}
+
+.memberInstitution {
+  margin: 0 0 6px;
+  font-size: 0.87rem;
+  color: #4a4a4a;
+  line-height: 1.55;
+}
+
+.orcidLink,
+.emailLink {
+  font-size: 0.83rem;
+  color: #8e3f96;
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.orcidLink:hover,
+.emailLink:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 960px) {
   .bodyLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .pageContainer {
+    border-left: none;
+    padding: 24px 20px 48px;
+  }
+
+  .memberGrid {
     grid-template-columns: 1fr;
   }
 }

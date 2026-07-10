@@ -1,12 +1,10 @@
-import Sidebar from '../components/layout/Sidebar'
 import styles from './OrderReprint.module.css'
 
 export default function OrderReprint() {
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-        <Sidebar />
-        <div className={styles.pageContainer}>
+<div className={styles.pageContainer}>
           <div className={styles.hero}>
             <span className={styles.eyebrow}>Business Opportunities</span>
             <h1 className={styles.pageHeading}>Order Reprint</h1>

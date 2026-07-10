@@ -1,13 +1,10 @@
-import Sidebar from '../components/layout/Sidebar'
 import styles from './contact.module.css'
 
 export default function Contact() {
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-        <Sidebar />
-
-        <div className={styles.pageContainer}>
+<div className={styles.pageContainer}>
           <div className={styles.hero}>
             <span className={styles.eyebrow}>AACS JOURNAL REPLICA</span>
             <h1 className={styles.pageHeading}>Contact Us</h1>

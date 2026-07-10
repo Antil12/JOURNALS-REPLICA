@@ -1,12 +1,10 @@
-import Sidebar from '../components/layout/Sidebar'
 import styles from './CurrentIssue.module.css'
 
 export default function CurrentIssue() {
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-        <Sidebar />
-        <div className={styles.pageContainer}>
+<div className={styles.pageContainer}>
           <div className={styles.hero}>
             <span className={styles.eyebrow}>Current Issue</span>
             <h1 className={styles.pageHeading}>Current Issue</h1>

@@ -1,12 +1,10 @@
-import Sidebar from '../components/layout/Sidebar'
 import styles from './AllIssues.module.css'
 
 export default function AllIssues() {
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-        <Sidebar />
-        <div className={styles.pageContainer}>
+<div className={styles.pageContainer}>
           <div className={styles.hero}>
             <span className={styles.eyebrow}>All Issues</span>
             <h1 className={styles.pageHeading}>All Issues</h1>

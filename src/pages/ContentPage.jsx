@@ -1,4 +1,3 @@
-import Sidebar from '../components/layout/Sidebar'
 import defaultStyles from './ContentPage.module.css'
 
 export default function ContentPage({ title, intro, sections, cta, stylesOverride }) {
@@ -7,8 +6,7 @@ export default function ContentPage({ title, intro, sections, cta, stylesOverrid
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-        <Sidebar />
-        <div className={styles.pageContainer}>
+<div className={styles.pageContainer}>
           <div className={styles.hero}>
             <span className={styles.eyebrow}>AACS Journal Replica</span>
             <h1 className={styles.pageHeading}>{title}</h1>

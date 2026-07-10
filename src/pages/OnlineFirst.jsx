@@ -1,12 +1,10 @@
-import Sidebar from '../components/layout/Sidebar'
 import styles from './OnlineFirst.module.css'
 
 export default function OnlineFirst() {
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-        <Sidebar />
-        <div className={styles.pageContainer}>
+<div className={styles.pageContainer}>
           <div className={styles.hero}>
             <span className={styles.eyebrow}>Online First</span>
             <h1 className={styles.pageHeading}>Online First</h1>

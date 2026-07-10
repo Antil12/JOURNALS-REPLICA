@@ -8,11 +8,11 @@
 
 .bodyLayout {
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 24px;
-  max-width: 1320px;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  max-width: 1400px;
   margin: 0 auto;
-  align-items: start;
+  padding: 28px 20px;
 }
 
 .pageContainer {

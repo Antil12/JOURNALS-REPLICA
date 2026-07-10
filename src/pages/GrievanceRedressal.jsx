@@ -1,12 +1,10 @@
-import Sidebar from '../components/layout/Sidebar'
 import styles from './GrievanceRedressal.module.css'
 
 export default function GrievanceRedressal() {
   return (
     <div className={styles.pageBg}>
       <div className={styles.bodyLayout}>
-        <Sidebar />
-        <div className={styles.pageContainer}>
+<div className={styles.pageContainer}>
           <div className={styles.hero}>
             <span className={styles.eyebrow}>Contact Us</span>
             <h1 className={styles.pageHeading}>Grievance Redressal</h1>

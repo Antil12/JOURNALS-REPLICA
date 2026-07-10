@@ -1,14 +1,14 @@
-.footer {
-  width: 100%;
+.contactW3ls {
   background: #a5a2a2;
-  padding: 0;
   position: relative;
+  padding-top: 0 !important;
   float: left;
+  width: 100%;
 }
 
 .footerCurve {
   width: 100%;
-  background: #ffffff;
+  background: #fff;
 }
 
 .dividerImage {
@@ -17,29 +17,65 @@
   height: auto;
 }
 
-.inner {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 22px 24px 0;
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.licenseSection {
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.licenseLogo {
   display: block;
   margin-top: 12px;
   text-align: center;
 }
 
 .licenseImg {
-  border: none;
-  width: 88px;
-}
-
-.openAccessLink {
-  margin-left: 10px;
+  border-width: 0;
 }
 
 .openAccessImg {
   width: 105px;
+  margin-right: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
 }
 
 .copy {
@@ -50,7 +86,7 @@
   width: 100%;
 }
 
-.links {
+.bannerMenuW3layouts {
   float: left;
   margin-top: 6px;
   list-style: none;
@@ -58,102 +94,84 @@
   margin: 6px 0 0;
 }
 
-.links li {
+.bannerMenuW3layouts li {
   list-style: none;
   padding-right: 28px;
   float: left;
 }
 
-.links a {
-  color: #000000;
+.bannerMenuW3layouts li a {
+  color: #000;
   letter-spacing: 1.5px;
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
 }
 
-.social {
+.agileitsSocialList {
   float: left;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.social li {
+.agileitsSocialList li {
   display: inline-block;
 }
 
-.socialIcon {
+.agileitsSocialList li a {
   width: 30px;
   height: 30px;
   color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  background: transparent;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
   text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
   text-decoration: none;
 }
 
-.socialIcon:hover {
-  color: #ffffff;
+.agileitsSocialList li a i {
+  line-height: 2.4em;
 }
 
-.socialIcon.facebook:hover {
+.agileitsSocialList li a:hover {
+  color: #fff;
+}
+
+.w3AgileFacebook:hover {
   background: #3b5998;
   border-color: #3b5998;
 }
 
-.socialIcon.twitter:hover {
+.agileTwitter:hover {
   background: #1da1f2;
   border-color: #1da1f2;
 }
 
-.socialIcon.linkedin:hover {
+.w3AgileDribble:hover {
   background: #ea4c89;
   border-color: #ea4c89;
 }
 
-.scrollTop {
-  position: fixed;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  text-align: center;
-  z-index: 999;
-  color: #803082;
-  width: 50px;
-  line-height: 50px;
-  right: 30px;
-  bottom: 30px;
-  padding-top: 2px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  transition: all 0.5s ease-in-out;
+.col12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.scrollTop.show {
-  visibility: visible;
-  cursor: pointer;
-  opacity: 1.0;
-}
-
-.scrollTopInner i {
-  line-height: inherit;
-  font-size: 5rem;
-}
-
-.copyText {
-  color: #ffffff;
+.copywriteTxt {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   letter-spacing: 2px;
   float: right;
   font-weight: 500;
   margin-top: 8px;
-  margin: 0;
+  color: #fff;
 }

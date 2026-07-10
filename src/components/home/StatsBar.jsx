@@ -1,26 +1,29 @@
 import styles from '../../pages/Home.module.css'
 
 const stats = [
-  { label: '', value: '' },
   { label: 'Authors', value: '0' },
-  { label: 'Articles Submitted', value: '2' },
+  { label: 'Articles Submitted', value: '3' },
   { label: 'Published Articles', value: '0' },
   { label: 'Scholarly Citations', value: '0' },
   { label: 'Readership', value: '0' },
-  { label: '', value: '' },
 ]
 
 export default function StatsBar() {
   return (
-    <section className={styles.statsSection}>
-      <div className={styles.statsGrid}>
-        {stats.map((stat, index) => (
-          <div key={index} className={styles.statItem}>
-            <div className={styles.statLabel}>{stat.label}</div>
-            <div className={styles.statValue}>{stat.value}</div>
-          </div>
-        ))}
+    <div className={styles.statsAgileits}>
+      <div className={styles.container}>
+        <div className={styles.statsGrid} id="counter">
+          {stats.map((stat, index) => (
+            <div key={index} className={styles.statItem}>
+              <h4 className={styles.agileitsW3layouts}>{stat.label}</h4>
+              <div className={`${styles.numscroller} ${styles.counterValue}`} data-count={stat.value}>
+                {stat.value}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </section>
+      <div className={styles.clearfix}></div>
+    </div>
   )
 }

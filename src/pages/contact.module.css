@@ -8,9 +8,9 @@
 
 .bodyLayout {
   display: grid;
-  grid-template-columns: 220px minmax(0, 760px);
+  grid-template-columns: 200px 1fr;
   gap: 32px;
-  max-width: 1180px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 28px 20px;
 }
@@ -78,6 +78,7 @@
 @media (max-width: 960px) {
   .bodyLayout {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   .pageHeading { text-align: left; }
   .intro { margin-left: 0; }
