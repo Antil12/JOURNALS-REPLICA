@@ -126,19 +126,19 @@
 }
 
 .contentLeftSpace {
-  padding-left: 40px;
+  padding-left: 0;
 }
 
 @media (max-width: 1199px) {
   .contentLeftSpace {
-    padding-left: 15px;
+    padding-left: 0;
   }
 }
 
 .textWhiteH6 {
   color: #ffffff;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 0;
   font-family: sans-serif;
 }

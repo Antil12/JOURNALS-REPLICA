@@ -21,7 +21,7 @@ export default function TopBar() {
 
                 <div className={styles.rowJustifyEnd} style={{ fontFamily: 'sans-serif !important' }}>
                   <div className={styles.col12Lg12}>
-                    <div className={styles.containerH100}>
+                    <div className={`${styles.container} ${styles.containerH100}`}>
                       <div className={styles.rowH100}>
                         <div className={styles.col8AlignCenter}>
                           <div className={styles.contentLeftSpace}>
@@ -47,15 +47,6 @@ export default function TopBar() {
                             >
                               <span><i className="fa fa-lock"></i> Login</span>
                             </a>
-                            <nav className={styles.navbarDark}>
-                              <button
-                                className={`${styles.navbarToggler} ${styles.ml2} ${styles.mt1}`}
-                                type="button"
-                                aria-label="Toggle navigation"
-                              >
-                                <i className="fa fa-bars" aria-hidden="true"></i>
-                              </button>
-                            </nav>
                           </div>
                         </div>
                       </div>
