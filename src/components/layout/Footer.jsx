@@ -1,9 +1,11 @@
-import styles from './Footer.module.css'
-import dividerImg from '../../assets/footer-bg.png'
+import ccByNcImg from '../../assets/cc-by-nc.png'
 import facebookIcon from '../../assets/facebook.svg'
-import twitterIcon from '../../assets/x-twitter.svg'
+import dividerImg from '../../assets/footer-bg.png'
 import linkedinIcon from '../../assets/linkedin.svg'
+import openAccessImg from '../../assets/open_access.png'
+import twitterIcon from '../../assets/x-twitter.svg'
 import siteConfig from '../../config/siteConfig'
+import styles from './Footer.module.css'
 
 export default function Footer() {
   return (
@@ -12,14 +14,14 @@ export default function Footer() {
         <img src={dividerImg} alt="" className={styles.dividerImage} />
       </div>
       <div className={styles.container}>
-        <span className={styles.licenseLogo}>
-          <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
-            <img alt="Creative Commons License" className={styles.licenseImg} src="https://d45jl3w9libvn.cloudfront.net/jaypee/static/img/license/CC-BY-NC-4.0.svg" />
+        <div className={styles.licenseLogo}>
+          <a rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" className={styles.licenseLink}>
+            <img alt="Creative Commons BY-NC License" className={styles.licenseImg} src={ccByNcImg} />
           </a>
-          <a href="https://www.jaypeejournals.com/" target="_blank" rel="noopener noreferrer">
-            <img src="https://d45jl3w9libvn.cloudfront.net/jaypee/static/img/open_access.png" alt='Jaypee Journals' className={styles.openAccessImg} />
+          <a href="https://www.jaypeejournals.com/" target="_blank" rel="noopener noreferrer" className={styles.licenseLink}>
+            <img src={openAccessImg} alt="Open Access" className={styles.openAccessImg} />
           </a>
-        </span>
+        </div>
         <div className={styles.clearfix}></div>
         <div className={styles.copy}>
           <ul className={styles.bannerMenuW3layouts}>

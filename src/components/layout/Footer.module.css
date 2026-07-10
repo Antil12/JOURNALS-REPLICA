@@ -50,18 +50,28 @@
 }
 
 .licenseLogo {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
   margin-top: 12px;
-  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.licenseLink {
+  display: inline-flex;
+  align-items: center;
 }
 
 .licenseImg {
   border-width: 0;
+  display: block;
 }
 
 .openAccessImg {
+  display: block;
   width: 105px;
-  margin-right: 10px;
 }
 
 .clearfix {
