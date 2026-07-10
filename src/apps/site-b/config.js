@@ -1,8 +1,11 @@
-import logoImage from '../../assets/jaypee-AACS-2.png'
-import coverImage from '../../assets/hero.png'
+import logoImage from './assets/jaypee-AAMLS-1.jpg'
+import logoImage2 from './assets/jaypee-AAMLS-2.jpg'
+import logoImage3 from './assets/jaypee-AAMLS-3.png'
+import coverImage from './assets/jaypee-AAMLS.jpg'
+
 
 export default {
-  siteName: 'Site B Journal',
+  siteName: 'Annals of Airway Management and Life Support',
   shortName: 'SBJ',
   siteCode: 'SBJ',
   journalCode: 'SBJ',
@@ -14,18 +17,18 @@ export default {
   phone: '+1-555-0100',
   address: '100 Example Street, Suite 200, Example City, EX 00000.',
   socialLinks: {
-    facebook: 'https://www.facebook.com/example',
-    twitter: 'https://www.twitter.com/example',
-    linkedin: 'https://www.linkedin.com/example',
+    facebook: 'https://www.facebook.com/jaypeemedicalpublishers1',
+    twitter: 'https://www.twitter.com/jaypeejournals',
+    linkedin: 'https://in.linkedin.com/company/jaypeejournals',
   },
   copyright: '© 2026. Example Publishing Group. All Rights Reserved.',
   metadata: {
-    title: 'Site B Journal',
-    description: 'Site B journal portal content.',
+    title: 'Annals of Airway Management and Life Support',
+    description: 'Annals of Airway Management and Life Support journal portal content.',
   },
-  submitManuscriptUrl: 'https://example.com/submit',
-  registerUrl: 'https://example.com/register',
-  loginUrl: 'https://example.com/login',
-  publisherName: 'Example Publishing Group',
-  logoImages: [logoImage, logoImage, logoImage],
+  submitManuscriptUrl: 'https://manuscript.scriptorszone.com/login/index.do?journalCode=AAMLS',
+  registerUrl: 'https://manuscript.scriptorszone.com/login/index.do?journalCode=AAMLS&register=1',
+  loginUrl: 'https://manuscript.scriptorszone.com/login/index.do?journalCode=AAMLS',
+  publisherName: 'Jaypee Brothers Medical Publishers Pvt. Ltd.',
+  logoImages: [logoImage, logoImage2, logoImage3],
 }

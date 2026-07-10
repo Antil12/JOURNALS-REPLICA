@@ -1,15 +1,15 @@
 import styles from './AllIssues.module.css'
-
-const JOURNAL_NAME = 'Advances in Anatomy and Clinical Sciences'
-
-const issues = []
+import siteContent from '../apps/site-a/content'
+import siteContent1 from '../apps/site-b/content'
 
 export default function AllIssues() {
+  const { journalName, issues } = siteContent.allIssues
+
   return (
     <div className={styles.pageBg}>
       <div className={styles.pageContainer}>
         <h1 className={styles.pageHeading}>
-          All Issues ( {JOURNAL_NAME} )
+          All Issues ( {journalName} )
         </h1>
         <hr className={styles.divider} />
 
@@ -20,7 +20,11 @@ export default function AllIssues() {
             {issues.map((issue) => (
               <a key={issue.id} href={issue.href} className={styles.issueCard}>
                 {issue.coverUrl && (
-                  <img src={issue.coverUrl} alt={`Volume ${issue.volume}, Issue ${issue.issueNo}`} className={styles.issueCover} />
+                  <img
+                    src={issue.coverUrl}
+                    alt={`Volume ${issue.volume}, Issue ${issue.issueNo}`}
+                    className={styles.issueCover}
+                  />
                 )}
                 <span className={styles.issueLabel}>
                   Volume {issue.volume}, Issue {issue.issueNo} ({issue.year})

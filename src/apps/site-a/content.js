@@ -369,6 +369,12 @@ export default {
       'Submit questions or access requests through editorial contact channels.',
     ],
   },
+
+  allIssues: {
+    journalName: 'Advances in Anatomy and Clinical Sciences',
+    issues: [],
+  },
+  
   contact: {
     eyebrow: 'Contact Us',
     heading: 'Contact Us',
