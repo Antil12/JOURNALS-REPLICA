@@ -1,10 +1,10 @@
 export default {
   home: {
-    heading: 'Advances in Anatomy and Clinical Sciences',
+    heading: 'Journal of Association of Forensic Medicine Experts',
     description: 'Aims & Scope Ownership and Management About the Institution About the Publisher Publication frequency Copyright and Licensing Open Access Policy Self-Archiving Policy for Authors Publication Ethics',
     submitLabel: 'Submit Manuscript',
     searchPlaceholder: 'Enter keywords to search',
-    journalCode: 'AACS',
+    journalCode: 'JAFME',
     stats: [
       { label: 'Authors', value: '0' },
       { label: 'Articles Submitted', value: '3' },
@@ -14,9 +14,9 @@ export default {
     ],
     latestArticlesHeading: 'Latest Articles',
     highlights: [
-      { icon: 'fa-eye', label: 'Most viewed\narticle', href: 'https://www.aacsj.com/journal/AACS/mostDownloadedArticles' },
-      { icon: 'fa-user-plus', label: 'Join as\nreviewer', href: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=AACS&register=2' },
-      { icon: 'fa-book', label: 'Indexing &\nAbstracting\nInformation', href: 'https://www.aacsj.com/journal/AACS/page/abstract_index' },
+      { icon: 'fa-eye', label: 'Most viewed\narticle', href: 'https://www.aacsj.com/journal/JAFME/mostDownloadedArticles' },
+      { icon: 'fa-user-plus', label: 'Join as\nreviewer', href: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=JAFME&register=2' },
+      { icon: 'fa-book', label: 'Indexing &\nAbstracting\nInformation', href: 'https://www.aacsj.com/journal/JAFME/page/abstract_index' },
       { icon: 'fa-globe', label: 'Explore More Journals', href: 'https://www.aacsj.com/searchByBrowse' },
     ],
   },
@@ -374,7 +374,7 @@ export default {
     journalName: 'Advances in Anatomy and Clinical Sciences',
     issues: [],
   },
-  
+
   contact: {
     eyebrow: 'Contact Us',
     heading: 'Contact Us',

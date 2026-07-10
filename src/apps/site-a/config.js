@@ -1,15 +1,16 @@
 import logoImage from '../../assets/jaypee-AACS-1.png'
 import logoImage2 from '../../assets/jaypee-AACS-2.png'
-import logoImage3 from '../../assets/jaypee-AACS-3.png'
-import coverImage from '../../assets/jaypee-AACS.jpg'
+import logoImage3 from '../../assets/jaypee-JAFME-3.jpg'
+import coverImage from '../../assets/jaypee-JAFME.jpg'
+import faviconImage from '../../assets/Jaypee-Logo.png'
 
 export default {
-  siteName: 'Advances in Anatomy and Clinical Sciences',
-  shortName: 'AACS',
-  siteCode: 'AACS',
-  journalCode: 'AACS',
+  siteName: 'Journal of Association of Forensic Medicine Experts',
+  shortName: 'JAFME',
+  siteCode: 'JAFME',
+  journalCode: 'JAFME',
   logo: logoImage,
-  favicon: logoImage,
+  favicon: faviconImage,
   coverImage,
   heroImage: coverImage,
   email: 'editor@aacsj.com',
@@ -22,12 +23,12 @@ export default {
   },
   copyright: '© 2026. Jaypee Brothers Medical Publishers (P) Ltd. | All Rights Reserved.',
   metadata: {
-    title: 'Advances in Anatomy and Clinical Sciences',
-    description: 'Official journal portal for Advances in Anatomy and Clinical Sciences.',
+    title: 'Journal of Association of Forensic Medicine Experts',
+    description: 'Official journal portal for Journal of Association of Forensic Medicine Experts.',
   },
-  submitManuscriptUrl: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=AACS',
-  registerUrl: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=AACS&register=1',
-  loginUrl: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=AACS',
+  submitManuscriptUrl: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=JAFME',
+  registerUrl: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=JAFME&register=1',
+  loginUrl: 'https://manuscript.jaypeejournals.com/login/index.do?journalCode=JAFME',
   publisherName: 'Jaypee Brothers Medical Publishers Pvt. Ltd.',
   logoImages: [logoImage, logoImage2, logoImage3],
 }

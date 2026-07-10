@@ -1,3 +1,4 @@
+import faviconImage from '../../assets/Jaypee-Logo.png'
 import logoImage from './assets/jaypee-AAMLS-1.jpg'
 import logoImage2 from './assets/jaypee-AAMLS-2.jpg'
 import logoImage3 from './assets/jaypee-AAMLS-3.png'
@@ -10,7 +11,7 @@ export default {
   siteCode: 'SBJ',
   journalCode: 'SBJ',
   logo: logoImage,
-  favicon: logoImage,
+  favicon: faviconImage,
   coverImage,
   heroImage: coverImage,
   email: 'editor@siteb.example',
